@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiras Práticas com HTML</title>
+</head>
+<body>
+    <h1>Parágrafos e Quebras de Linha</h1>
+    <hr>
+    <!-- LESS THAN (<) = &lt; / GREATER THAN (>) = &gt;-->
+    <p>Você pode escrever um parágrafo de qualquer jeito. Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;</p>
+    <p>Se precisar quebrar o texto em algum lugar específico como esse, <br> você pode usar a tag (br)</p>
+    <p>Vamos adicionar alguns símbolos especiais:
+        &reg; &copy; &trade; &euro; &pound; &yen; &cent; &Delta; &uarr;</p>
+    <p>Vamos adicionar alguns emoji: &#x1F596; &#x1f913; encontrado no emojipedia.org</p>
+
+        <!--OUTRAS FORMATAÇÕES-->
+
+    <hr>
+    <h1>Outras Formatações</h1>
+    <hr>
+    <h2>Código Fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <code>
+    <pre>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'0 número {num} é PAR)
+        else:
+            print(f'0 número {num} é Ímpar')
+        print('Fim do programa')
+    </pre>
+    </code>
+
+    <h2>Citações simples usando Q</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas usando BLOCKQUOTE</h2>
+    <p>Segundo o Guilherme A. Barucke no seu livro HTML:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/_/2iPYCQAAQBAJ?hl=pt-BR&sa=X&ved=2ahUKEwjey8_LxvSDAxX3qJUCHVQECuIQ7_IDegQIGxAC">
+        Usar os atributos da linguagem HTML5 para criar elementos gráficos ricos no desenvolvimento de aplicações web...
+    </blockquote>
+    <h2>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</h2>
+
+    
+
+</body>
+</html>
