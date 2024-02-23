@@ -14,6 +14,11 @@ h1#titulo {
     text-decoration: none;
     color: white;
 }
+
+p#sub {
+    text-align: center;
+}
+
 header {
     background-image: linear-gradient(to bottom, #464EF0, #242533 );
     text-align: center;
@@ -57,4 +62,39 @@ p {
     font-weight: lighter;
     text-align: justify;
     text-indent: 30px;
+}
+
+div {
+    text-align: center;
+}
+
+article {
+    background-color: #5F618A;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.434);
+}
+
+h4 {
+    background-color:#2b2d56;
+    color: white;
+    padding: 13px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    text-decoration: none;
+    background-color: #2b2d56;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p {
+    text-align: center;
+    font-size: small;
+    margin: 3px;
 }
