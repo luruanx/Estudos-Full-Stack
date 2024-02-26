@@ -1,7 +1,20 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: 'droid';
-    src: url(fontes/idroid.otf) format(opentype);
+    src: url('../fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+
+
+:root {
+    --cor0: #464EF0;
+    --cor1: #5F618A;
+    --cor2: #242533;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-droid: 'droid', sans-serif;
 }
 
 body {
