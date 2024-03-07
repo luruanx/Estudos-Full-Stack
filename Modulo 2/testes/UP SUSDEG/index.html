@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUSDEG</title>
     <link rel="shortcut icon" href="img/favicon black.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         </button>
 
         <div class="logo-header">
-            <img src="img/favicon black.svg" class="img-logo-header" alt="logo SUSDEG">
+            <img src="assets/img/logo susdeg lateral.png" class="img-logo-header" alt="logo SUSDEG">
         </div>
 
         <nav class="navigation-header" id="navigation-header">
@@ -44,44 +44,7 @@
     </main>   
 </body>
 
-<script>
-    var header = document.getElementById('header');
-    var navigationheader = document.getElementById('navigation-header');
-    var content = document.getElementById('content');
-    var showSidebar = false;
-
-    function toggleSidebar()
-    {
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationheader.style.marginLeft = '-10vw';
-            navigationheader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else
-        {
-            navigationheader.style.marginLeft = '-100vw';
-            navigationheader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
-
-    function closedSidebar()
-    {
-        if(showSidebar)
-        {
-            toggleSidebar();
-        }
-    }
-
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar)
-        {
-            toggleSidebar();
-        }
-    })
-</script>
+<script src="assets/script.js"></script>
 </html>
 
 

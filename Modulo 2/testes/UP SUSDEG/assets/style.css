@@ -24,8 +24,10 @@ body {
     font-family: var(--fonte-main);
 }
 
+/* HEADER / NAV */
+
 .img-logo-header {
-    width: 70px;
+    width: 220px;
 }
 
 .header,
