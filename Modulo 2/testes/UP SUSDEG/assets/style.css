@@ -42,7 +42,7 @@ body {
     box-shadow: 1px 1px 4px var(--color-black);
     height: 3.5em;
     justify-content: space-between;
-    padding: 15px 10%;
+    padding: 15px 5%;
 }
 
 .navigation-header {
@@ -93,42 +93,92 @@ body {
     top {margin-left: -10vw;}  
 }
 
-
-
-
-
-
-
-
-
-/* main {
-    min-width: 300px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 2px;
-    margin-bottom: 30px;
-    padding: 0px 20px 20px 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 1s;
-} */
-
-
-
-
-
-
-
-
-
+/* MAIN */
 
 main {
-    text-align: center;
-    padding-top: 3em;
     height: 100vh;
     transition: 1s;
 }
 
-/* .banner-article {
+/* UTILITÁRIOS */
 
-} */
+.text-primary {
+    color: var(--color-secondary);
+}
+
+.text-secondary {
+    background-color: var(--color-primary);
+    font-weight: bolder;
+    padding: 1px 4px;
+}
+
+.botton {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 45px;
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 var(--color-black); 
+}
+
+.botton:hover {
+    background-color: #004cbf;
+}
+
+/* HOME SECTION */
+
+.home-section {
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+
+    .home-section {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home-text p {
+        font-size: 125%;
+    }
+
+    .home-img img {
+        width: 125%;
+    }
+}

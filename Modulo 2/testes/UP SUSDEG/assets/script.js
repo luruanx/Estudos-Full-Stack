@@ -35,3 +35,5 @@ window.addEventListener('resize', function(event) {
         toggleSidebar();
     }
 })
+
+/*MAIN*/
