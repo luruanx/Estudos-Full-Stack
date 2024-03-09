@@ -15,6 +15,7 @@
 }
 
 * {
+    font-family: var(--fonte-main);
     margin: 0;
     padding: 0;
 }
@@ -95,9 +96,15 @@ body {
 
 /* MAIN */
 
-main {
-    height: 100vh;
-    transition: 1s;
+main,
+.home-section,
+.cards-section {
+    box-sizing: border-box;
+    border-color: var(--color-black);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+    padding-top: 0;
 }
 
 /* UTILITÁRIOS */
@@ -112,73 +119,174 @@ main {
     padding: 1px 4px;
 }
 
-.botton {
+.button {
     background-color: var(--color-secondary);
     color: var(--color-black);
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    padding: 15px 45px;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
     border: 2px solid var(--color-black);
     border-radius: 10px;
-    box-shadow: 4px 4px 0 var(--color-black); 
+    box-shadow: 4px 4px 0 var(--color-black);
+    display: block; 
+    margin-top: 2rem;
 }
 
-.botton:hover {
+.button:hover {
     background-color: #004cbf;
 }
 
 /* HOME SECTION */
 
 .home-section {
+    padding: 2rem 0 16rem 2rem;
+    box-sizing: border-box;
+}
+
+.home-section img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
     max-width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10%;
 }
 
-.home-text {
-    max-width: 37rem;
-}
-
-.home-text h1 {
-    font-size: 4rem;
+h1 {
+    font-size: 6vw;
+    line-height: 105%;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    line-height: 4rem;
 }
 
-.home-text p {
+.home-section p {
+    font-size: 2vw;
+    padding-right: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.home-section .button {
+    position: relative;
+}
+
+.home-section .button::after {
+    content: '';
+    background: url("../assets/img/arrow-curve.svg");
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+}
+
+.decoration {
+    display: block;
+    position: relative;
+}
+
+.decoration::after {
+    content: '';
+    background: url(../assets/img/three-dashes.svg);
+    position: absolute;
+    top: -0.75rem;
+    height: 36px;
+    width: 40px;
+}
+
+@media screen and (min-width: 80rem) {
+    .home-text h1, h2 {
+        font-size: 4vw;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+
+    .container.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-column {
+        flex: 2;
+    }
+
+    .about-column p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+}
+
+/* CARDS SECTION */
+
+.cards-section {
+    padding: 2rem;
+    padding-bottom: 8rem;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
     margin-bottom: 4rem;
 }
 
-.home-img img {
-    width: 100%;
-    height: 100%;
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+    padding: 20px;
 }
 
-@media (max-width: 480px) {
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-secondary);
+}
 
-    .home-section {
-        padding: 100px 2%;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-        gap: 5rem;
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card a {
+    display: block;
+    margin: 0 0 0 auto;
+    width: fit-content;
+}
+
+@media screen and (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .home-text h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+    .card:nth-child(2n) {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    h1, h2 {
+        font-size: 4vw;
     }
 
-    .home-text p {
-        font-size: 125%;
+    .container.row-reverse {
+        flex-direction: row-reverse;
     }
 
-    .home-img img {
-        width: 125%;
+
+@media screen and (min-width: 80rem) {
+    .container {
+        max-width: 80rem;
     }
+}
 }
