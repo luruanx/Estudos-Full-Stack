@@ -142,6 +142,8 @@ main {
     justify-content: space-between;
 }
 
+/* HOME ARTICLE */
+
 .home-article {
     display: flex;
     align-items: center;
@@ -204,7 +206,7 @@ main {
 /* CARDS ARTICLE */
 
 .cards-article {
-    padding-bottom: 8rem;
+    padding-bottom: 2rem;
 }
 
 .cards {
@@ -215,12 +217,22 @@ main {
     margin-bottom: 4rem;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: .6s;
+}
+
 .card {
     background-color: var(--color-secondary);
     border: 2px solid var(--color-black);
     box-shadow: 4px 4px 0 var(--color-black);
     max-width: 15rem;
     padding: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: .8s;
 }
 
 .card:nth-child(2n) {
@@ -249,5 +261,57 @@ main {
 
     .card:nth-child(2n) {
         margin-top: 2rem;
+    }
+}
+
+/* OBJECTIVE ARTICLE */
+
+.article-objective {
+    font-family: var(--fonte-secondary);
+    background-color: var(--color-gray);
+    box-sizing: border-box;
+    max-width: 1000px;
+    padding: 2rem 10px;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    text-align: center;
+}
+
+.article-objective h1 {
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+}
+
+.article-objective p {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+.article-objective ul {
+    text-align: left;
+    font-size: larger;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.article-objective li {
+    text-align: justify;
+    padding: .3rem;
+}
+
+@media (max-width: 740px) {
+    .article-objective {
+        width: 100%;
+    }
+
+    .article-objective h1 {
+        font-size: 2.25rem;
+        line-height: 2.3rem;
+    }
+
+    .article-objective a {
+        width: 1000px;
+        margin: 0 auto;
     }
 }
