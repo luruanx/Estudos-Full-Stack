@@ -374,7 +374,7 @@ main {
     height: 15px;
     width: 15px;
     margin: 0 1px;
-    background-color: var(--color-black);
+    background-color: var(--color-gray);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -401,7 +401,24 @@ main {
     to{opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 800px) {
+    .prev, .next, .text {
+        font-size: 13px;
+    }
+
+    .dot {
+        height: 13px;
+        width: 13px;
+    }
+
+    .slider-content {
+        max-width: 80%;
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .prev, .next, .text {
         font-size: 11px;
     }
@@ -409,6 +426,12 @@ main {
     .dot {
         height: 10px;
         width: 10px;
+    }
+
+    .slider-content {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
     }
 }
 
