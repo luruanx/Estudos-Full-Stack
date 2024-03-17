@@ -321,6 +321,24 @@ main {
 .slider-article {
     box-sizing: border-box;
     padding-bottom: 10rem;
+    margin-top: 4rem;
+}
+
+.description-section {
+    
+}
+
+.description-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.description-section p {
+    margin: 0 6rem -2rem 6rem;
+    font-size: larger;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 .slider-content {
@@ -402,6 +420,12 @@ main {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .description-section p {
+        margin: auto;
+        margin-bottom: -2rem;
+    }
+
     .prev, .next, .text {
         font-size: 13px;
     }
