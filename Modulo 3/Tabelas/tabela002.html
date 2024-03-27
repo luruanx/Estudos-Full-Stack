@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 50rem;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        caption {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
+
+        tbody > tr:nth-child(2n) { /* ou ODD, EVEN, 2N-1 */
+            background-color: lightseagreen;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">0000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
