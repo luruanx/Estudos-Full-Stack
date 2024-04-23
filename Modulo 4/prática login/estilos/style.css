@@ -60,7 +60,7 @@ div#formulario > p {
 }
 
 form > div.campo {
-    background-color: #00000088;
+    background-color: #49a09d;
     display: block;
     width: 100%;
     height: 40px;
@@ -120,7 +120,7 @@ form > a.boton {
     height: 40px;
     padding-top: 5px;
     margin-top: 5px;
-    background-color: #64676788;
+    background-color: #67646688;
     color: #2d6462;
     border: 1px solid #64676788;
     border-radius: 5px;
@@ -131,6 +131,7 @@ form > a.boton:hover {
     background-color: #44454588;
 }
 
-form > a.botao > span {
-    font-size: 0.8em;
+form > a.boton > span {
+    font-size: 1.3em;
+    padding-top;
 }
