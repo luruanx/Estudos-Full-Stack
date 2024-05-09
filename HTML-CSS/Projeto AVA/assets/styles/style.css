@@ -226,3 +226,30 @@ span {
     color: var(--color-black);
     box-shadow: 0 0 25px var(--color-primary);
 }
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: 'Software Developer';
+    color: var(--color-primary);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: '';
+    background-color: var(--color-black);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--color-black);
+    right: -8;
+    animation: cursor .6s infinite, typing 20s steps(14) infinite;
+}
