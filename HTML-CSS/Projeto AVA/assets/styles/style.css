@@ -510,3 +510,84 @@ span {
     font-family: 'font Awesome\ 5 free';
     color: aquamarine;
 }
+
+.education .left {
+    left: 0;
+}
+
+.education .right {
+    left: 50%;
+}
+
+.education .left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--color-primary);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--color-primary);
+}
+
+.education .right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--color-primary);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent var(--color-primary) transparent transparent;
+}
+
+.education .right::after {
+    left: -16px;
+}
+
+.education .content {
+    background-color: var(--color-primary);
+    position: relative;
+    border-radius: 6px;
+}
+
+.education .content .tag {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.education .content .decs {
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.education .content .decs h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.education .content .decs p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) { 
+    .education .timeline {
+    margin-top: 2rem;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .container {
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+}
