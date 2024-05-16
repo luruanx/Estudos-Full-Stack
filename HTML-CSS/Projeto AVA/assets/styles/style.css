@@ -566,14 +566,16 @@ span {
     padding-bottom: 1rem;
 }
 
-.education .content .decs h3 {
-    font-size: 1.5rem;
+.education .content .tag h2 {
+    font-size: 2rem;
     font-weight: 600;
+    color: var(--color-black);
 }
 
 .education .content .decs p {
     font-size: 1.3rem;
     font-weight: 500;
+    color: var(--color-black);
 }
 
 @media screen and (max-width: 600px) { 
@@ -589,5 +591,28 @@ span {
         width: 100%;
         padding-left: 8rem;
         padding-right: 2rem;
+    }
+
+    .education .container::after {
+        font-size: 2.2rem;
+    }
+
+    .education .container::before {
+        left: 61px;
+        border: medium solid var(--color-primary);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--color-primary) transparent transparent;
+    }
+
+    .education .left::after {
+        left: 15px;
+    }
+
+    .education .right::after {
+        left: 15px;
+    }
+
+    .education .right {
+        left: 0%;
     }
 }
