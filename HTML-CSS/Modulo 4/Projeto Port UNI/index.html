@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Created By Luruanx -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Luruanx</title>
+    <!-- Font awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+</head>
+
+<body>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn-icon-header">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+
+        <div class="logo-header">
+            <img src="assets/Imagens/logo.png" class="img-logo-header" alt="logo Luruanx">
+        </div>
+
+        <nav class="navigation-header" id="navigation-header">
+            <button onclick="toggleSidebar()" class="btn-icon-header">
+                <i class="fa-solid fa-x" style="color: #ffffff;"></i>
+            </button>
+
+            <a href="#home">Sobre Mim</a>
+            <a href="#formação">Formação</a>
+            <a href="#Projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+    </header>
+
+    <main tabindex="0" onclick="closedSidebar()" class="content" id="content">
+        <article class="home-article" id="home">
+            <section class="home-section">
+                <h1>Olá, sou o <br> Ruan Richard</h1>
+                <p>Profissional com mais de 7 anos de experiência em resoluções de problemas técnicos. Expertise em análise de sistemas críticos, tendo habilidades comprovadas na prestação de suporte de alto nível, sendo destaque e recebendo promoções e reconhecimento em todos os cargos que ocupou.</p>
+                <p>Tratando de personalidade, graças a anos de experiência em atendimento ao cliente, ele demonstra uma notável capacidade de adaptação a diferentes ambientes e perfis de pessoas. Possui muita facilidade para trabalhar em equipe, destacando-se por sua paciência e carisma. É extremamente proativo, organizado, resiliente e curioso, estando em uma busca contínua pela excelência no que oferece.</p>
+
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/luaanriichard/" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/luruanx" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:richard_10luan@hotmail.com" target="_blank" rel="external"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </section>
+    
+            <section class="home-img">
+                <img src="assets/Imagens/perfil lik.jpg" alt="foto do Ruan">
+            </section>
+        </article>
+
+        <article class="educ-article" id="formação">
+            <h2>Formação Acadêmica</h2>
+            <section class="cards">
+                <section class="card" >
+                        <strong>Análise e Desenvol. de Sistemas</strong>
+                        <p>UNINTER <br> jul de 2022 - jan de 2025</p>
+                </section>
+
+                <section class="card" >
+                    <strong>Inglês como Segundo Idioma</strong>
+                    <p>UNINTER <br> jul de 2022 - jul de 2024</p>
+                </section>
+    
+                <section class="card" >
+                    <strong>Curso Técnico Informática</strong>
+                    <p>InforQuallity <br> jul de 2015 - set de 2017</p>
+                </section>
+
+                <section class="card" >
+                    <strong>Ensino Médio Completo</strong>
+                    <p>IFPB Campina Grande <br> jan de 2015 - mar de 2017</p>
+                </section>
+            </section>
+        </article>
+
+        <aside class="aside-project" id="projeto">
+            <h2>Veja Também Outros Projetos</h2>
+            <p>Repositorio <a href="https://github.com/luruanx" target="_blank" rel="external" class="externo">luruanx</a> | Projetos, estudos, tecnológias e muito mais.</p>
+        </aside>
+    </main>
+
+    <section class="article-contact" id="contato">
+        <div class="contact">
+            <h2>Contato</h2>
+            <form action="" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" required id="">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" required id="">
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" id=""></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/Imagens/logo.png" class="img-logo-header" alt="logo Luruanx">
+            </div>
+
+            <div class="footer-link">
+                <a href="#home">Sobre Mim</a>
+                <a href="#formação">Formação</a>
+                <a href="#Projetos">Projetos</a>
+                <a href="#contatos">Contatos</a>
+            </div>
+        </div>
+
+        <div class="footer-end">
+            <p>Desenvolvido por <a href="https://github.com/luruanx" target="_blank" rel="external" class="externo">luruanx</a> | projeto ADS - UNINTER</p>
+        </div>            
+    </footer>
+
+    <!-- Animation -->
+
+    <script src="assets/styles/script.js"></script>
+    
+</body>
+</html>

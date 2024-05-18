@@ -1,0 +1,426 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-primary: #8E000E;
+    --color-secondary: #999999;
+    --color-white: #EDECEC;
+    --color-black: #212121;
+    --color-dark: #0D1117;
+
+    --fonte-main: "Poppins", sans-serif;
+    --fonte-secondary: "Open Sans", Helvetica, sans-serif;
+}
+
+* {
+    font-family: var(--fonte-main);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #8e5359, #341e1e);
+    font-family: var(--fonte-main);
+    min-height: 100vh;
+}
+
+/*----- <header> -----*/
+
+.img-logo-header {
+    width: 150px;
+}
+
+.header,
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--color-dark);
+    box-shadow: 1px 1px 4px var(--color-black);
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.navigation-header {
+    gap: 2em;
+    z-index: 2;
+}
+
+.navigation-header a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: 1s;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navigation-header a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.btn-icon-header {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    .btn-icon-header {
+        display: block;
+    }
+    .navigation-header {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: var(--color-dark);
+    height: 100%;
+    width: 35vw;
+    padding: 1em;
+    animation-duration: .7s;
+    margin-left: -100vw;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}  
+}
+
+/* MAIN */
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*----- <article.home> -----*/
+
+.home-article {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.home-section {
+    width: 50%;
+    margin-top: 2rem;
+    margin-right: 30px;
+}
+
+.home-section h1 {
+    color: var(--color-dark);
+    font-size: 3.8rem;
+    line-height: 3.7rem;
+}
+
+.home-section p {
+    font-weight: 400;
+    margin: 20px 0 30px 0;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: .2rem solid var(--color-dark);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin: 0 1.5rem 3rem 0;
+    transition: .3s ease;
+}
+
+.social-icon a:hover {
+    color: var(--color-dark);
+    transform: scale(1.3) translateY(-5px);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 25px var(--color-primary);
+}
+
+.home-img {
+    width: 60%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.home-img img {
+    width: 70%;
+    border-radius: 30%;
+}
+
+@media (max-width: 830px) {
+    main {
+        flex-direction: column;
+    }
+
+    .home-article {
+        display: block;
+    }
+
+    .home-section,
+    .home-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-section h1 {
+        font-size: 2.25rem;
+        line-height: 2.3rem;
+    }
+}
+
+/*----- <article.educ> -----*/
+
+.educ-article {
+    padding-bottom: 2rem;
+}
+
+.educ-article h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .6s;
+}
+
+.card {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-black);
+    border-radius: 20%;
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: .8s;
+}
+
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-primary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.card a {
+    display: block;
+    margin: 0 0 0 auto;
+    width: fit-content;
+}
+
+@media screen and (min-width: 630px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 1rem;
+    }
+}
+
+/*----- <article.project> -----*/
+
+.aside-project {
+    background-color: var(--color-secondary);
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    margin-bottom: 2rem;
+}
+
+.aside-project h2 {
+    text-align: center;
+}
+
+aside > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside > p > a {
+    background-color: var(--color-primary);
+    padding: 3px 7px;
+    font-weight: bolder;
+    color: var(--color-dark);
+}
+
+aside > p > a:hover {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+/*----- <section.contact> -----*/
+
+.article-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: var(--color-secondary);
+    width: 30%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+}
+
+.article-contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.article-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: var(--color-primary);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+
+form textarea {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid var(--color-dark);
+    color: var(--color-primary);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    border-radius: 16px;
+}
+
+/*----- <footer> -----*/
+
+footer,
+.footer-content {
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-content {
+    background-color: var(--color-dark);
+    box-shadow: 1px 1px 4px var(--color-secondary);
+    padding: 1rem 0 2rem 0;
+}
+
+.footer-logo,
+.footer-link {
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: 1s;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-content a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.footer-end {
+    background-color: var(--color-black);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 7px;
+}
+
+.footer-end a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer-end a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+@media only screen and (max-width: 408px) {
+    .footer-link a {
+        display: block;
+    }
+}
+
