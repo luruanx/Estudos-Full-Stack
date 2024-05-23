@@ -299,7 +299,8 @@ aside > p > a:hover {
     flex-direction: column;
     padding: 10px 45px;
     background-color: var(--color-secondary);
-    width: 30%;
+    width: 80%;
+    max-width: 300px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
 }
 
