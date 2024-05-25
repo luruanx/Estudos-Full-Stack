@@ -282,6 +282,13 @@ aside > p > a:hover {
     color: var(--color-primary);
 }
 
+@media (max-width: 835px) {
+    .aside-project {
+        padding: 150px 0;
+        margin-bottom: 5rem;
+    }
+}
+
 /*----- <section.contact> -----*/
 
 .article-contact {
