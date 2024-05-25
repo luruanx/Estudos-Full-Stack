@@ -210,12 +210,13 @@ main {
 }
 
 .card {
-    background-color: var(--color-secondary);
     border: 2px solid var(--color-black);
     border-radius: 20%;
     box-shadow: 4px 4px 0 var(--color-black);
     max-width: 15rem;
     padding: 1rem;
+    padding-left: 1.5rem;
+    margin: 1rem;
 }
 
 .card:hover {
@@ -225,7 +226,6 @@ main {
 
 .card:nth-child(2n) {
     align-self: end;
-    background-color: var(--color-primary);
 }
 
 .card strong {
@@ -255,10 +255,8 @@ main {
 
 .aside-project {
     background-color: var(--color-secondary);
-    padding: 30px;
+    padding: 150px;
     margin: auto;
-    max-width: 800px;
-    border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
     margin-bottom: 2rem;
 }
