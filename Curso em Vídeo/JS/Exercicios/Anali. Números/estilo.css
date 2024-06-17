@@ -1,15 +1,16 @@
 body {
-    background-color: rgb(72, 103, 216);
+    background-color: #af48d8;
     font: normal 15pt arial;
 }
 
 header {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 section {
-    background-color: white;
+    background-color: rgb(69, 56, 172);
+    color: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -22,7 +23,7 @@ select#flista {
 }
 
 footer {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font: italic;
 }
