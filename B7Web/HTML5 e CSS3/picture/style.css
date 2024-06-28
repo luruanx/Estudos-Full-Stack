@@ -1,5 +1,28 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+} 
+
 img {
     width: 400px;
     height: 400px;
     object-fit: contain; /* cover, none or scale-down */
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
 }
