@@ -1,0 +1,21 @@
+@keyframes exemplo {
+    0% {background-color: aqua; top:0; left: 0;}
+    25% {background-color: yellowgreen; top: 0; left: 200px;}
+    50% {background-color: blueviolet; top: 200px; left: 200px;}
+    75% {background-color: brown; top: 200px; left: 0;}
+    100% {background-color: burlywood; top: 0; left: 0;}
+}
+
+body {
+    margin:0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: exemplo;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
