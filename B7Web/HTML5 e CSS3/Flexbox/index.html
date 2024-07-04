@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Direções</title>
+    <Style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: #DDDDDD;
+            margin: 10px;
+        }
+        .container div {
+            flex: 1; /*Valor para divisão*/
+            background-color: rgb(130, 58, 58);
+            margin: 18px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            background-color: #DDDDDD;
+        }
+        .container2 div {
+            background-color: rgb(42, 85, 165);
+            margin: 18px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
