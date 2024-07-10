@@ -1,6 +1,36 @@
+@charset "UTF-8";
+
+:root {
+    --color-primary: #39aae1;
+    --color-secondary: #0079c7;
+    --color-dark: #2b4c99;
+    --color-gray: #727272;
+    --color-white: #EDECEC;
+    --color-black: #000000;
+
+    --fonte-main: Arial, Helvetica, sans-serif;
+    --fonte-secondary: "Open Sans", Helvetica, sans-serif;
+} 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+/* UTILITIES */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.column {
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -11,19 +41,9 @@ header {
     height: 120px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 990px;
-}
-
 .logo {
     display: flex;
     align-items: center;
-}
-
-.logo img {
-    width: 8rem;
 }
 
 .menu {
@@ -45,14 +65,91 @@ nav ul {
 nav a {
     display: block;
     padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-main);
     text-decoration: none;
     text-transform: uppercase;
-    color: #727272;
+    color: var(--color-gray);
 }
 
 nav .active a,
 nav a:hover {
-    background-color: #39aae1;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* SECTION.BANNER */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.b-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.b-headline h1 {
+    color: var(--color-white);
+    font-size: 65px;
+    text-shadow: 0 1px 0 #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 320px;
+}
+
+.b-headline h2 {
+    color: var(--color-white);
+    font-size: 20px;
+    text-shadow: 0 1px 0 #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.b-options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: var(--color-white);
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: var(--color-primary);
+}
+.banner2 {
+    background-color: var(--color-secondary);
+}
+.banner3 {
+    background-color: var(--color-dark);
+}
+
+.banner-title {
+    font-size: 25px;
+}
+.banner-desc {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.b-options a {
+    display: inline-block;
+    border: 1px solid var(--color-white);
+    padding: 5px;
+    color: var(--color-white);
+    font-size: 13px;
+    text-decoration: none;
 }
