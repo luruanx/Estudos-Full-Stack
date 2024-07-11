@@ -33,6 +33,11 @@ body {
     flex-direction: column;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* HEADER */
 
 header {
@@ -152,4 +157,79 @@ nav a:hover {
     color: var(--color-white);
     font-size: 13px;
     text-decoration: none;
+}
+
+/* SECTION.GERAL */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-title-text {
+    color: var(--color-black);
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin-top: 6px;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+
+article .news-data {
+    display: flex;
+}
+article .news-posted {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news-comments {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .thumbnail {
+    margin-top: 10px;
+}
+article .thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin: 20px 0 8px 0;
+    font-size: 23px;
+    color: var(--color-black);
+}
+article .news-resume {
+    font-size: 14px;
+    color: var(--color-gray);
+    line-height: 20px;
+    margin-bottom: 30px;
 }
