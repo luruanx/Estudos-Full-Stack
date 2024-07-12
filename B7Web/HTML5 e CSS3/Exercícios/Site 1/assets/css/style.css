@@ -38,6 +38,10 @@ body {
     flex-wrap: wrap;
 }
 
+.flexColumn {
+    flex-direction: column;
+}
+
 /* HEADER */
 
 header {
@@ -232,4 +236,64 @@ article .news-resume {
     color: var(--color-gray);
     line-height: 20px;
     margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex: 1;
+}
+
+.fm1,
+.fm2,
+.fm3 {
+    flex: 1;
+    color: var(--color-white);
+    padding: 20px;
+}
+.fm1 {
+    background-color: var(--color-primary);
+}
+.fm2 {
+    background-color: var(--color-secondary);
+}
+.fm3 {
+    background-color: var(--color-dark);
+}
+
+.footer-area {
+    display: flex;
+}
+.footer-ai {
+    flex: 1;
+    color: var(--color-white);
+}
+
+footer .widget-title-text {
+    color: var(--color-white);
+}
+
+.footer-copy {
+    border-top: 1px solid var(--color-gray);
+    height: 40px;
+    line-height: 40px;
+    color: var(--color-gray);
+    font-size: 12px;
+    margin: 30px 0 15px 0;
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.footer-copy a:hover {
+    color:  var(--color-dark);
 }
