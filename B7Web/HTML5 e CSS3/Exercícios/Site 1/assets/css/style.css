@@ -53,6 +53,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .menu {
@@ -102,6 +103,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 20px;
 }
 
 .b-headline h1 {
@@ -296,4 +298,67 @@ footer .widget-title-text {
 
 .footer-copy a:hover {
     color:  var(--color-dark);
+}
+
+/* MENU MOBILE */
+
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 0;
+}
+
+.mm-line {
+    margin: 10px 0 0 0;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+
+@media (max-width:700px) {
+    .b-headline h1 {
+        font-size: 55px;
+    }
+    .b-headline h2 {
+        font-size: 17px;
+    }
+    .b-options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral {
+        padding-left: 20px;
+    }
+    .footer-menu,
+    .footer-area {
+        flex-direction: column;
+    }
+    .footer-area,
+    .footer-copy,
+    .footer-copy {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
+    }
+    header {
+        height: auto;
+        margin: 0 20px;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }

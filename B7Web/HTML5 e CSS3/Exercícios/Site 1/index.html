@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediCenter</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menu-mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };    
+    </script>
+    </script>
 </head>
 
 <body>
@@ -16,6 +28,11 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menu-mobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">Home</a></li>
@@ -215,9 +232,7 @@
         <div class="footer-copy">
             Copyright - Todos os Direitos reservados | Desenvolvido por <a href="https://github.com/luruanx">luruanx</a>
         </div>
-
         </div>
     </footer>
-
 </body>
 </html>
