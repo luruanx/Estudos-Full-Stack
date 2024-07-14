@@ -118,11 +118,12 @@ nav a:hover {
 .b-headline h2 {
     color: var(--color-white);
     font-size: 20px;
+    font-weight: 200;
     text-shadow: 0 1px 0 #555555;
     margin: 0;
     padding: 0;
     max-width: 350px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .b-options {
@@ -152,8 +153,18 @@ nav a:hover {
     font-size: 25px;
 }
 .banner-desc {
-    font-size: 16px;
+    font-size: 13px;
     margin: 20px 0;
+}
+.banner-titleH {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.banner-hours {
+    font-size: 13px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff2c;
 }
 
 .b-options a {
@@ -317,10 +328,12 @@ footer .widget-title-text {
 
 @media (max-width:700px) {
     .b-headline h1 {
-        font-size: 55px;
+        margin-top: 80px;
+        font-size: 50px;
     }
     .b-headline h2 {
         font-size: 17px;
+        margin-bottom: 100px;
     }
     .b-options {
         height: auto;
@@ -331,6 +344,12 @@ footer .widget-title-text {
     }
     #geral {
         padding-left: 20px;
+    }
+    #banner {
+        background-image: url(../img/img2.jpg);
+    }
+    .widget{
+        margin-top: 250px;
     }
     .footer-menu,
     .footer-area {
