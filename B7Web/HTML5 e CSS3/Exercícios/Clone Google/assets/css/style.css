@@ -72,3 +72,22 @@ input[type="button"] {
 input[type="button"]:hover {
     border: 1px solid #20212447;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 290px 20px 0 20px;
+
+}
+.f2 {
+    display: flex;
+    justify-content: end;
+}
+.f2-l {
+    flex: 1;
+}
+.f2-r {
+    flex: 1;
+    justify-content: right;
+}
