@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Google Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-    <Header>
-        <nav>
-            <a href="https://mail.google.com/">Gmail</a>
-            <a href="https://www.google.com.br/imghp">Imagens</a>
-        </nav>
-        <div>
-            <img src="https://img.icons8.com/?size=100&id=83321&format=png&color=000000" alt="opções" class="icon-op">
+    <header>
+        <div class="header-content">
+            <a href="">Gmail</a>
         </div>
-        <div>
-            <img src="assets/img/222.jpg" alt="foto do perfil" class="foto-perfil">
+        <div class="header-content">
+            <a href="">Imagens</a>
         </div>
-    </Header>
+        <div class="header-content">
+            <img src="assets/img/menu.png" alt="" width="15" height="15">
+        </div>
+        <div class="header-content">
+            <img src="assets/img/perfil.jpg" alt="" class="perfil">
+        </div>
+    </header>
 
-    <main>
-        <div class="logo">
-            <img src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo google">
-        </div>
-        <div>
-            <form action="" method="get">
-                <input type="text" name="" id="search">
-            </form>
-        </div>
-        <div>
-            <input type="button" value="Pesquisa Google">
-            <input type="button" value="Estou com sorte">
-        </div>
-    </main>
-
-    <footer>
-        <div class="f1">
-            <p>Brasil</p>
-        </div>
-
-        <div class="f2">
-            <div class="f2-l">
-                <a href="">Sobre</a>
-                <a href="">Publicidade</a>
-                <a href="">Negócios</a>
-                <a href="">Como funcina a Pesquisa</a>
+    <section>
+        <div class="wrap">
+            <div class="logo">
+                <img src="assets/img/logo.png" height="92" alt="">
+            </div>
+            <div class="input">
+                <input type="text" />
+                <div class="access">
+                    <img src="assets/img/keyboard.png" alt="" width="20" />
+                    <img src="assets/img/mic.png" alt="" height="30px" />
+                </div>
+            </div>
+            <div class="btn">
+                <button>Pesquisa Google</button>
+                <button>Estou com sorte</button>
             </div>
 
-            <div class="f2-r">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-header">
+            <span>Brasil</span>
+        </div>
+        <div class="footer-settings">
+            <span class="span-left">
+                <a href="">Publicidade</a>
+                <a href="">Negócios</a>
+                <a href="">Sobre</a>
+            </span>
+            <span class="span-right">
                 <a href="">Privacidade</a>
                 <a href="">Termos</a>
                 <a href="">Configurações</a>
-            </div>
+            </span>
         </div>
     </footer>
+
 </body>
+
 </html>
