@@ -134,10 +134,9 @@ span a:hover {
 .span-left a,
 .span-right a {
     margin-left: 30px;
-
+    font-size: 14px;
 }
 .span-right {
     float: right;
     margin-right: 30px;
-
 }
