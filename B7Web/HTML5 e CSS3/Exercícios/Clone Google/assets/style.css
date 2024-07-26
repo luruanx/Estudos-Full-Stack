@@ -118,8 +118,7 @@ footer {
 }
 .footer-settings {
     border-top: 1px solid #e4e4e4;
-    line-height: 40px; 
-  
+    line-height: 40px;
 }
 span a{
     color: #5F6368;
@@ -139,4 +138,14 @@ span a:hover {
 .span-right {
     float: right;
     margin-right: 30px;
+}
+
+@media (max-width:700px) {
+    .span-left {
+        flex-direction: column;
+    }
+    .span-right {
+        flex-direction: column;
+        margin-right: 30px;
+    }
 }
