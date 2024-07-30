@@ -31,3 +31,7 @@ div:last-child {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+main :not(p) {
+    background-color: aquamarine;
+}
