@@ -1,12 +1,10 @@
 body {
     margin: 30px
 }
-
 main {
     flex-direction: ;
     max-width: 900px;
 }
-
 p {
     padding-bottom: 10px;
 }
@@ -15,7 +13,21 @@ p::first-letter {
     font-size: 25px;
     font-weight: bold;
 }
-
 p::first-line {
     background-color: aqua;
+}
+
+div {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
+
+div:first-child {
+    background-color: aqua;
+}
+
+div:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
