@@ -1,19 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    display: flex;
+    margin: 30px
 }
 
 main {
     flex-direction: ;
     max-width: 900px;
-    text-align: center;
+}
+
+p {
+    padding-bottom: 10px;
 }
 
 p::first-letter {
     font-size: 25px;
     font-weight: bold;
+}
+
+p::first-line {
+    background-color: aqua;
 }
