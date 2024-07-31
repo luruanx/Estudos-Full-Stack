@@ -1,10 +1,13 @@
+
 body {
     margin: 30px
 }
+
 main {
-    flex-direction: ;
     max-width: 900px;
+    text-align: center;
 }
+
 p {
     padding-bottom: 10px;
 }
@@ -15,6 +18,24 @@ p::first-letter {
 }
 p::first-line {
     background-color: aqua;
+}
+
+.balao {
+    background-color: blue;
+    display: inline-block;
+    color: azure;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+
+    border: 20px solid;
+    border-color: brown transparent transparent transparent;
 }
 
 div {
@@ -34,4 +55,8 @@ div:last-child {
 
 main :not(p) {
     background-color: aquamarine;
+}
+
+div:nth-child(3) {
+    background-color: brown;
 }
