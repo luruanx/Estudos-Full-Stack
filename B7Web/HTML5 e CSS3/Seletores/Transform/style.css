@@ -1,0 +1,25 @@
+.scale {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: scale(1); /*Distorcer o Objeto*/
+}
+
+.rotate {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform: rotate(90deg); /*Rodar o Objeto*/
+}
+
+.skew {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: skew(10deg, 5deg); /*Distorcer em ângulo o Objeto*/
+}
