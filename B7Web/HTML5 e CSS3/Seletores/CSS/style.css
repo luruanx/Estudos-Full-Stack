@@ -1,0 +1,9 @@
+#user {
+    width: 200px;
+    color: brown;
+}
+
+#user::placeholder {
+    color: brown;
+}
+
