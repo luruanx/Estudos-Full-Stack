@@ -5,7 +5,7 @@
     --color-primary: #B28756;
     --color-secondary: #0058DB;
     --color-dark: #2e2e2e;
-    --color-gray: #999999;
+    --color-gray: #7e7e7e;
     --color-white: #EDECEC;
     --color-black: #161616;
 
@@ -20,7 +20,61 @@
     font-family: var(--fonte-secondary);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* UTILITIES */
+
+.default {
+    background-color: var(--color-white);
+    padding: 50px 0;
+}
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title {
+    font-size: 18px;
+}
+.default .section-desc {
+    font-size: 10px;
+    color: var(--color-gray);
+    margin: 13px 0 40px 0;
+}
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+.default.ligh {
+    background-color: var(--color-white);
+}
+.default.ligh .section-title,
+.default.ligh .section-body {
+    color: var(--color-black);
+}
+.default.dark {
+    background-color: var(--color-black);
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: var(--color-white);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
 
 /* HEADER */
 
@@ -117,18 +171,6 @@ header {
     text-transform: uppercase;
     margin-top: 8px;
 }
-.banner a {
-    display: block;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
 .banner .pointers {
     width: 100vw;
     height: 20px;
@@ -148,4 +190,25 @@ header {
 }
 .banner .pointer.active {
     background-color: var(--color-primary);
+}
+
+/* CSS SPECIFIC AREA */
+
+.about {
+    display: flex;
+}
+.about-left {
+    flex: 1;
+}
+.about-left p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.about-right {
+    width: 500px;
+    text-align: center;
+}
+.about-right img {
+    width: 400px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.651);
 }
