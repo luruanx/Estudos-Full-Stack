@@ -6,6 +6,7 @@
     --color-secondary: #0058DB;
     --color-dark: #2e2e2e;
     --color-gray: #7e7e7e;
+    --color-gray2: #b6b5b5;
     --color-white: #EDECEC;
     --color-black: #121212;
 
@@ -236,4 +237,44 @@ header {
     margin-top: 10px;
     font-size: 13px;
     color: var(--color-gray);
+}
+
+/* SECTION.PROJECTS */
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-filters {
+    border: 1px solid var(--color-gray2);
+    background-color: #dfdfdf;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+.projects-filters ul,
+.projects-filters li {
+    list-style: none;
+}
+.projects-filters ul {
+    display: flex;
+    justify-content: center;
+}
+.projects-filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-left: 1px solid var(--color-gray2);
+    color: var(--color-gray);
+    border-bottom: 3px solid #dfdfdf;
+    cursor: pointer;
+}
+.projects-filters li:hover,
+.projects-filters li.active {
+    border-bottom: 3px solid var(--color-primary);
+}
+.projects-filters li:first-child {
+    border-left: 0;
 }
