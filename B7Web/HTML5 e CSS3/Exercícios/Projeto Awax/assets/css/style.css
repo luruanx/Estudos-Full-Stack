@@ -204,6 +204,7 @@ header {
 .about-left p {
     font-size: 14px;
     line-height: 23px;
+    text-align: justify;
 }
 .about-right {
     width: 500px;
@@ -277,4 +278,17 @@ header {
 }
 .projects-filters li:first-child {
     border-left: 0;
+}
+
+.projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo {
+    width: 280px;
+    
 }
