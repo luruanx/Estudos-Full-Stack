@@ -320,3 +320,95 @@ header {
 .photoarea:hover .photoinfo {
     display: flex;
 }
+
+/* SECTION.TEAM */
+
+.bg-team {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.team-area {
+    background-color: #121212d2;
+    padding: 50px 0;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: var(--color-white);
+    margin-right: 20px;
+}
+.section-team .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    padding: 30px;
+}
+
+.team-avatar {
+    width: 150px;
+    height: auto;
+}
+.team-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.team-role {
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-top: 5px;
+}
+.team-social {
+    display: flex;
+    margin-top: 15px;
+}
+.team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-gray2);
+    border-radius: 13px;
+    margin-right: 8px;
+}
+.team-social a:hover {
+    background-color: var(--color-primary);
+}
+
+.team-area .pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.team-area .pointer.active {
+    background-color: var(--color-primary);
+}
