@@ -290,5 +290,33 @@ header {
 }
 .photo {
     width: 280px;
-    
+}
+.photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.photoinfo {
+    position: absolute;
+    background-color: #12121270;
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px;
+}
+.photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.photoarea:hover .photoinfo {
+    display: flex;
 }
