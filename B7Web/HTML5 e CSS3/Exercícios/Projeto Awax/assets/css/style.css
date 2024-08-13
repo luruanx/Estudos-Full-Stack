@@ -412,3 +412,58 @@ header {
 .team-area .pointer.active {
     background-color: var(--color-primary);
 }
+
+/* SECTION.CLIENTS */
+
+.section-clients {
+    display: flex;
+    justify-content: center;
+}
+.section-clients .slide {
+    max-width: 700px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: var(--color-white);
+    margin-right: 20px;
+}
+.section-clients .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    padding: 30px;
+}
+.team-role2 {
+    font-size: 14px;
+    color: var(--color-dark);
+    margin-top: 5px;
+}
+.comment p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+    line-height: 1.4rem;
+}
+
+.pointers {
+    margin-top: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pointer.active {
+    background-color: var(--color-primary);
+}
