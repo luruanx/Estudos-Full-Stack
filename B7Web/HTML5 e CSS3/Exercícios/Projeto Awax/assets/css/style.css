@@ -95,12 +95,10 @@ header {
 
 .logo {
     width: 100px;
+    margin: 0 30px;
 }
-.logoimg {
-    width: 80px;
-    height: 80px;
-    background-color: var(--color-primary);
-    border-radius: 50%;
+.logo img {
+    width: 100px;
 }
 
 .menu-opener {
@@ -205,6 +203,7 @@ header {
 }
 .about-left {
     flex: 1;
+    margin-left: 30px;
 }
 .about-left p {
     font-size: 14px;
@@ -336,7 +335,7 @@ header {
 }
 .team-area {
     background-color: #121212d2;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 
 .section-team {
@@ -493,22 +492,23 @@ header {
 
 .section-companies {
     background-color: white;
-    border-top:1px solid white;
-    border-bottom:1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .section-companies--area {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
 .section-company {
-    flex:1;
-    text-align:center;
+    flex: 1;
+    text-align: center;
 }
 
 /* SECTION.PRICE */
 
 .section-price {
     display: flex;
+    margin: 0 30px;
 }
 .section-price--item {
     flex:1;
@@ -580,10 +580,11 @@ header {
 }
 .section-premium--left img {
     width: 300px;
-    margin-right: 30px;
+    margin: 0 30px;
 }
 .section-premium--right {
     flex: 1;
+    margin-right: 30px;
 }
 .section-premium--right p {
     font-size: 14px;
@@ -748,7 +749,7 @@ header {
     background-image: url(../img/mapa.jpg);
     background-size: cover;
     background-position: center;
-    padding: 40px 0;
+    padding: 40px;
 }
 .map-area {
     width: 100vw;
@@ -844,7 +845,7 @@ footer {
 
 /* ------ RESPONSIVENESS ------ */
 
-@media (min-width: 450px) and (max-width: 800px) {
+@media (min-width: 450px) and (max-width: 800px) {    /* TABLET */
 
     /*HEADER*/
     .logo {
@@ -875,9 +876,18 @@ footer {
         margin-left: 50px;
         border: 0;
     }
-    .menu li.active a {
+    .menu li a:hover,
+    .menu .active a {
         border: 0;
         color: var(--color-primary);
+    }
+
+    /* SECTION.BANNER */
+    .banner h1 {
+        font-size: 3rem;
+    }
+    .banner h3 {
+        font-size: 1rem;
     }
 
     /* SECTION.ABOUT */
@@ -924,5 +934,132 @@ footer {
     .map-info-item:last-child {
         margin-bottom: 0;
     }
+}
 
+@media (min-width: 450px) and (max-width: 960px) {
+
+    /* SECTION.TEAM */
+    .section-team {
+        max-width: 580px;
+    }
+}
+
+
+
+@media (max-width: 450px) {          /* MOBILE */
+
+    /*HEADER*/
+    .logo {
+        margin-left: 40px;
+    }
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: #121212f6;
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+    .menu li a:hover,
+    .menu .active a {
+        border: 0;
+        color: var(--color-primary);
+    }
+
+    /* SECTION.BANNER */
+    .banner h1 {
+        font-size: 2.2rem;
+    }
+    .banner h3 {
+        font-size: 1rem;
+    }
+
+    /* SECTION.ABOUT */
+    .about {
+        flex-direction: column;
+    }
+    .about-left {
+        margin: 0 30px 30px;
+    }
+    .about-left a {
+        margin-top: 0;
+    }
+    .about-right {
+        width: auto;
+    }
+    .about-right img {
+        width: 92%;
+    }
+
+    /* SECTION.SERVICES */
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .service {
+        min-width: 100%;
+    }
+    .service:first-child {
+        border-left: 0;
+    }
+
+    /* SECTION.PROJECTS */
+
+    .section-projects {
+        margin: 0 30px;
+    }
+    .projects-filters ul {
+        display: block;
+        text-align: center;
+    }
+    .projects-filters li {
+        border: 0;
+    }
+    .photo {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    .photoarea img {
+        width: 300px;
+        height: 190px;
+    }
+
+    /* SECTION.TEAM */
+    .section-team {
+        max-width: 280px;
+    }
+
+    /* SECTION.MAP */
+    .section-map {
+        padding: 70px 100px;
+    }
+    .map-area,
+    .map-info {
+        width: auto;
+    }
+    .map-info-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .section-team {
+        max-width: 280px;
+    }
 }
