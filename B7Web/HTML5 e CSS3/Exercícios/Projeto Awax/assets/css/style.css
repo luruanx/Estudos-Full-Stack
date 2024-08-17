@@ -3,12 +3,12 @@
 
 :root {
     --color-primary: #B28756;
-    --color-secondary: #0058DB;
+    --color-secondary: #eabf8f;
     --color-dark: #2e2e2e;
     --color-gray: #7e7e7e;
     --color-gray2: #b6b5b5;
     --color-white: #EDECEC;
-    --color-black: #121212;
+    --color-black: #060606;
 
     --fonte-main: 'Montserrat Alternates', Helvetica, sans-serif;
     --fonte-secondary: "Open Sans", Helvetica, sans-serif;
@@ -490,7 +490,7 @@ header {
 
 /* SECTION.COMPANIES */
 
-.section-companies {
+C {
     background-color: white;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -667,6 +667,7 @@ header {
     justify-content: center;
     align-items:center;
     padding:20px;
+    margin: 0 20px;
     background-color:white;
     color: var(--color-gray);
 }
@@ -789,7 +790,7 @@ footer {
     background-color: var(--color-black);
     padding: 40px;
 }
-.footer-area {
+.area-main {
     max-width: 1140px;
     margin: auto;
     color: var(--color-white);
@@ -942,6 +943,63 @@ footer {
     .section-team {
         max-width: 580px;
     }
+
+    /* SECTION.COMPANIES */
+    .section-companies {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+
+    /* SECTION.TEAM */
+    .section-team {
+        max-width: 280px;
+    }
+    
+    /* SECTION.PRICE */
+    #Price {
+        background-color: var(--color-secondary);
+    }
+    .section-price {
+        display: block;
+    }
+    .section-price--item {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* SECTION.PREMIUM */
+    .premium {
+        display: none;
+    }
+
+    /* SECTION.FACTS */
+    .section-facts {
+        display: block;
+    }
+
+    /* SECTION.FACTS */
+    #Contact {
+        padding: 50px 30px ;
+    }
+
+    /* FOOTER */
+    .area-main {
+        display: inline-block;
+    }
+    .footer-item {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-social {
+        margin-bottom:20px;
+    }
+    .footer-item.area2 {
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 
@@ -1045,9 +1103,31 @@ footer {
         max-width: 280px;
     }
 
+    /* SECTION.COMPANIES */
+    .section-companies {
+        display: none;
+    }
+
+    /* SECTION.PRICE */
+    .section-price {
+        display: block;
+    }
+    .section-price--item {
+        margin-bottom: 20PX;
+    }
+
+    .section-share {
+        display: block;
+    }
+    .section-share--legend,
+    .section-share--item {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
     /* SECTION.MAP */
     .section-map {
-        padding: 70px 100px;
+        padding: 70px 30px;
     }
     .map-area,
     .map-info {
@@ -1058,8 +1138,3 @@ footer {
     }
 }
 
-@media (max-width: 650px) {
-    .section-team {
-        max-width: 280px;
-    }
-}
