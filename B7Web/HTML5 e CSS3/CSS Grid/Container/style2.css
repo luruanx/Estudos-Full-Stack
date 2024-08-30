@@ -53,3 +53,32 @@
 .container2 .eight {
     grid-row: 3 / 5;
 }
+
+
+.container3 {
+    background-color: rgb(206, 208, 208);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+.container3 .item {
+    background-color: rgb(44, 165, 42);
+    border-radius: 10px;
+    padding: 20px;
+    color: azure;
+    font-size: 20px;
+}
+
+/*  ORDEM:
+    grid-row-start
+    grid-column-start
+    grid-row-end
+    grid-column-end */
+
+.container3 .one {
+    grid-area: 1 / 1 / 4 / 3;
+}
+.container3 .eight {
+    grid-area: 4 / 2 / 6 / 4;
+}
