@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", system-ui;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* HEADER */
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+.header-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.logo img {
+    width: 64px;
+}
+.header-search input {
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid #b2b2b2;
+    outline: 0;
+}
