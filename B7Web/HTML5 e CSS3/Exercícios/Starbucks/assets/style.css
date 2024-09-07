@@ -7,11 +7,6 @@
     font-family: "Open Sans", system-ui;
 }
 
-main {
-    max-width: 1140px;
-    margin: auto;
-}
-
 /* UTILITIES */
 .container {
     max-width: 1140px;
@@ -120,7 +115,7 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area1-content {
-    padding: 80px 70px 80px 0;
+    padding: 80px;
 }
 .area1-img1 {
     height: 350px;
@@ -169,7 +164,7 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area3-img1 {
-    height: 730px;
+    height: 680px;
     background-image: url(img/f5.jpg);
     background-position: center;
     background-size: cover;
@@ -178,4 +173,17 @@ header .line {
     background-image: url(img/bg2.jpg);
     background-position: left;
     background-size: cover;
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    background-color: #E8E9EE;
+}
+.area4-content {
+    padding: 210px 50px 210px 90px;
+}
+.area4-img {
+    background-image: url(img/bg3.jpg);
+    background-position: left;
 }
