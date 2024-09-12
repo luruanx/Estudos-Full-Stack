@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 70px;
     position: fixed;
     left: 0;
     right: 0;
@@ -15,7 +17,8 @@ header {
 }
 .logo {
     font-size: 23px;
-    font-weight: bold;
+    font-weight: 700;
+    color: white;
 }
 .menu {
     width: 30px;
@@ -36,7 +39,113 @@ header {
 }
 .leftside {
     flex: 1;
+    background-color: #3b576d;
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
 }
 .rightside {
     flex: 1;
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+.info {
+    color: white;
+}
+.profession {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.name {
+    font-weight: 600;
+    font-size: 110px;
+    margin-bottom: 30px;
+    line-height: 120px;
+}
+.buttons a {
+    display: inline-block;
+    background-color: black;
+    color: #3b576d;
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #33333382;
+    border-radius: 2px;
+}
+a.button2 {
+    background-color: #42637c;
+    color: white;
+}
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+
+.copy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: rgb(167, 166, 166);
+    font-size: 13px;
+    margin-left: 50px;
+}
+.copy a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    header {
+        position: initial;
+        background-color: #3b576d;
+        padding: 30px;
+    }
+    .menu-line {
+        background-color: white;
+    }
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 75px);
+    }
+    .leftside {
+        flex: none;
+        padding: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copy {
+        padding-bottom: 5px;
+        margin: 0;
+    }
+    .copy a {
+        color: #3b576d;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .profession {
+        font-size: 14px;
+    }
+    .name {
+        font-size: 59px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    .buttons a {
+        display: block;
+        font-size: 14px;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
 }
