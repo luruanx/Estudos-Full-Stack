@@ -245,6 +245,30 @@ nav .button:hover {
     color: var(--color-primary);
 }
 
+/* FOOTER */
+footer {
+    background-color: var(--color-dark);
+}
+footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    font-size: 20px;
+    color: var(--color-gray);
+}
+.copyright a {
+    color: var(--color-gray);
+    text-decoration: none;
+}
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* TABLET */
 @media (max-width: 890px) {
@@ -293,7 +317,14 @@ nav .button:hover {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* FOOTER */
+    footer .container {
+        flex-direction: column;
+        gap: 20px,0;
+    }
 }
+
 
 
 /* MOBILE */
