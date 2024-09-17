@@ -48,3 +48,36 @@ if ( idade < 18) {
 } else if (idade >= 60) {
     console.log("Você é um idoso.");
 }
+
+
+
+
+// CONDICIONAL TERNÁRIO - ? / :
+
+let isMember = false;
+let shipping = (isMember ? 2 : 10);
+
+console.log(isMember ? "Você é membro" : "Você não é membro");
+console.log("Frete: " + shipping);
+
+
+
+// SWITCH
+
+let profession = "fiscal";
+console.log("Profissional: " + profession)
+
+switch (profession) {
+    case 'fiscal':
+        console.log('Sua camisa será VERDE');
+        break;
+    case 'bombeiro':
+        console.log('Sua camisa será VERMELHA');
+        break;
+    case 'policial':
+        console.log('Sua camisa será AZUL');
+        break;
+    default:
+        console.log('Sua camisa será PRETA');
+        break;
+}
