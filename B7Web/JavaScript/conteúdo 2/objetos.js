@@ -38,3 +38,18 @@ let person = {
 
 person.carros[0].cor
 console.log(personagem.carros[1].modelo);
+
+
+
+// FUNÇÃO DENTRO DE UM OBJETO
+
+let pessoa = {
+    nome: 'Ruan',
+    sobrenome: 'Richard',
+    idade: '26',
+    nomecompleto: function() {
+        return `${this.nome} ${this.sobrenome}`;
+    }
+}
+
+console.log(pessoa.nomecompleto());
