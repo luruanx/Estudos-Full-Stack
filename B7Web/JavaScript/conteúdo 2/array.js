@@ -28,6 +28,9 @@ console.log(`Total de ingredientes: ${ingredientes.length}`);
 
 
 
+
+
+
 // ORDENAÇÃO DE ARRAY
 let fruits = ['Maça', 'Uva', 'Laranja', 'Banana'];
 
@@ -48,4 +51,39 @@ cars.sort((a, b) => {
     return a.year - b.year;
 });
 
-console.log
+console.log(cars);
+
+
+
+
+
+// INTERAÇÃO DE ARRAY
+let fruitss = ['Banana', 'Laranja', 'Maça', 'Pêra'];
+
+let bigFruits = fruitss.filter((value) => {
+    return value.length > 4;
+});
+
+console.log(bigFruits);
+
+// every ou some
+let fruitsE = ['Banana', 'Laranja', 'Maça', 'Pêra', 'Uva'];
+
+let ok = fruitsE.every((value) => {
+    return value.length > 3;
+});
+
+if (ok) {
+    console.log('Todos são maiores que 3');
+} else {
+    console.log('Não são todos maiores que 3');
+}
+
+// includes
+let fruitsI = ['Banana', 'Laranja', 'Maça', 'Pêra', 'Uva'];
+
+if (fruitsI.includes('Uva')) {
+    console.log('Tem uva sim');
+} else {
+    console.log('Não tem uva.')
+}
