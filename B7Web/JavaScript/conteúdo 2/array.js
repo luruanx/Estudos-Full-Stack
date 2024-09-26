@@ -22,7 +22,7 @@ ingredientes.join('-');
 
 //alterar item especifico
 ingredientes[3] = 'sabor';
-ingredientes[ingredientes.length -1] = 'açucar';
+ingredientes[ingredientes.length - 1] = 'açucar';
 
 console.log(`Total de ingredientes: ${ingredientes.length}`);
 
@@ -36,3 +36,16 @@ fruits.sort();
 
 //inverte a ordem
 fruits.reverse();
+
+//ordenando objetos
+let cars = [
+    { brand: 'Fiat', year: 2022 },
+    { brand: 'Bmw', year: 2018 },
+    { brand: 'Ferrari', year: 2020 }
+]
+
+cars.sort((a, b) => {
+    return a.year - b.year;
+});
+
+console.log
