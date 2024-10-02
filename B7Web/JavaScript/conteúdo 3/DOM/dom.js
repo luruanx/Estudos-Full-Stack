@@ -26,6 +26,7 @@ botao.addEventListener("click", () => {
 
 // -----------MANIPULAÇAO ELEMENTOS
 // alterando element
+// append e prepend
 function clickMani() {
     const teste = document.querySelector('#teste');
     const element = teste.querySelector('ul');
@@ -39,3 +40,18 @@ function clickMani() {
     */
 }
 
+// after e before 
+function clickMani2() {
+    const teste = document.querySelector('#teste');
+    const element = teste.querySelector('ul');
+
+    let newUl = document.createElement('ul');
+    
+    for (let i = 0; i < 5; i++) {
+        let newLi = document.createElement('li');
+        newLi.innerHTML = "Item add " + (i);
+        newUl.append(newLi);
+    }
+
+    element.after(newUl);
+}
