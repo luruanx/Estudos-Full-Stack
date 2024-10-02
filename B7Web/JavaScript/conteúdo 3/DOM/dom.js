@@ -31,5 +31,11 @@ function clickMani() {
     const element = teste.querySelector('ul');
 
     element.innerHTML += "<li>Item adicionado</li>"
+
+    /* let newLi = document.createElement("li");
+    newLi.innerText = "Item adicionado";
+
+    element.appendChild(newLi);
+    */
 }
 
