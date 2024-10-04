@@ -1,6 +1,6 @@
 // DOM
 
-// ---------SELECIONANDO ELEMENTOS
+// --------------------------SELECIONANDO ELEMENTOS
 document.getElementById("--")
 document.getElementsByClassName
 document.getElementsByName
@@ -11,7 +11,7 @@ document.querySelectorAll     //return array
 
 
 
-// ----------EVENTOS DE CLIQUE
+// --------------------------------EVENTOS DE CLIQUE
 //com o onclick
 function clicou() {
     console.log("Clicou no botão");
@@ -24,7 +24,7 @@ botao.addEventListener("click", () => {
 });
 
 
-// -----------MANIPULAÇAO ELEMENTOS
+// -----------------------------MANIPULAÇAO ELEMENTOS
 // alterando element
 // append e prepend
 function clickMani() {
@@ -54,4 +54,21 @@ function clickMani2() {
     }
 
     element.after(newUl);
+}
+
+// -----------------------------MANIPULAÇAO ATRIBUTOS
+// getAttribute = pega
+// hasAttribute = busca
+// setAttribute = seta
+function clickManiAtri() {
+    const input = document.querySelector('input');
+    const botao = document.querySelector('.botao');
+
+    if (input.getAttribute('type') === 'text') {
+        input.setAttribute('type', 'password');
+        botao.innerHTML = "Mostrar senha"
+    } else {
+        input.setAttribute('type', 'text');
+        botao.innerHTML = "Ocultar senha";
+    }
 }
