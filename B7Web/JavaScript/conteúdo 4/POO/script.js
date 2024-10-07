@@ -9,11 +9,12 @@
 
 class Person {
 
-    age = 0;
+    _age = 0;
     steps = 0;
 
-    constructor(name) {
-        this.name = name;
+    constructor(fName, lName) {
+        this.fName = fName;
+        this.lName = lName;
     }
 
     //action
@@ -21,11 +22,17 @@ class Person {
         this.steps++;
     }
 
-    setAge(newAge) {
-        if (typeof newAge == 'number') {
-            this.age = newAge;
-        } else {
-            console.log('Apenas Números.')
+    get fullName() {
+        return `${this.fName} ${this.lName}`;
+    }
+
+    get age() {
+        return this._age;
+    }
+
+    set age(x) {
+        if (typeof x == 'number') {
+            this._age = x;
         }
     }
 }
@@ -35,4 +42,5 @@ let p1 = new Person("João");
 let p2 = new Person("Maria");
 let p3 = new Person("Pedro");
 
-p1.setAge(20);
+p1.age = 20;
+console.log(`${p1.fullName} tem ${p1.age} anos.`)
