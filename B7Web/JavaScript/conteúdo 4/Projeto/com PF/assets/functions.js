@@ -85,6 +85,44 @@ const stage = {
         this.fighter2El.querySelector('.bar').style.width = `${f2Pct}%`
     },
     doAttack(attacking, attacked) {
+        if(attacking.life <= 0 || attacked.life <= 0) {
+            log.addMessage('Lutador Morto!');
+            return;
+        }
+
+        const attackFactor = (Math.random() * 2).toFixed(2);
+        const defenseFactor = (Math.random() * 2).toFixed(2);
+
+        const actualAttack = attacking.attack * attackFactor;
+        const actualDefense = attacked.defense * defenseFactor;
+
+        if (actualAttack > actualDefense) {
+            attacked.life -= actualAttack;
+            attacked.life = attacked.life < 0 ? 0 : attacked.life;
+            log.addMessage(`${attacking.name} casou ${actualAttack.toFixed(2)} de dano em ${attacked.name}`)
+        } else {
+            log.addMessage(`${attacked.name} conseguiu defender...`);
+        }
+
         this.update();
+    }
+}
+
+
+// LOG
+
+const log = {
+    list: [],
+    addMessage(msg) {
+        this.list.push(msg);
+        this.render();
+    },
+    render() {
+        const logEl = document.querySelector('.log');
+        logEl.innerHTML = '';
+
+        for (let i in this.list) {
+            logEl.innerHTML += `<li>${this.list[i]}</li>`;
+        }
     }
 }
