@@ -1,53 +1,28 @@
-// MANIPULAÇÃO DE ARRAYS
 
-let lista = ['ovo', 'farinha', 'corante', 'massa'];
-let lista2 = ['panela', 'prato', 'batedeira']
+// MANIPULAÇÃO DE STRING
+let nome = 'Ruan Richard';
 
-// string e separa = .join('-');
-// posição item = .indexOf('massa');
-// adiciona = .push();
-// remove primeiro = .shift();
-// remove ultimo = .pop();
-// altera = lista[0] = '...';
-// remove = .splice(1, ?)
-// concatenar = .concat(lista2);
-// ordenar = .sort(); ou .reverse();
+// divide em array = .split('...')
+// tamanho = .length
+// procurar = .indexOf()
+// extrair = .slice(0, ...) ou quantidade = substr(0, ?)
+// substituir = .replace('nome1', 'nome2)
+// maiúscula = .toUpperCaser()
+// remove esp = .trim()
 
-let res = lista.toString();
+let resultado = nome.length;
+console.log(resultado);
+
+
+
+
+// MÉTODOS NUMBERS
+
+let n = 10;
+
+// trans. string = .toString()
+// qtd. numbers = .toFixed(2);
+// trans. number = .parseInt(n); ou .parseFloat(n);
+
+let res = n.toString();
 console.log(res);
-
-
-
-
-// ------------ MANIPULAÇÃO DE ARRAYS 2
-
-let list = [40, 4, 7, 35];
-let list2 = [];
-let list3 = []
-
-// MAP RODA A FUNÇÃO NOS ITENS
-list2 = list.map(function(item) {
-    return item * 2;
-})
-
-console.log(resp);
-
-// FILTER = FILTRA OS ITENS
-// EVERY = VERIFICA SE TODOS SÃO
-// SOME = VERIFICA SE ALGUNS
-// FIND = RETORNA O ITEM EXATO
-// FINDINDEX = RETORNA A POSIÇÃO DO ITEM
-
-list3 = list.filter(function(item) {
-
-//  return (item > 20) ? true : false;
-    if(item > 20) {
-        return true;
-    } else {
-        return false;
-    }
-})
-
-console.log(list3);
-
-
