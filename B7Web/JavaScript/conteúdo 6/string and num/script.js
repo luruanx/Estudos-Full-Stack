@@ -1,3 +1,5 @@
+
+// MANIPULAÇÃO DE STRING
 let nome = 'Ruan Richard';
 
 // divide em array = .split('...')
@@ -9,5 +11,18 @@ let nome = 'Ruan Richard';
 // remove esp = .trim()
 
 let resultado = nome.length;
-
 console.log(resultado);
+
+
+
+
+// MÉTODOS NUMBERS
+
+let n = 10;
+
+// trans. string = .toString()
+// qtd. numbers = .toFixed(2);
+// trans. number = .parseInt(n); ou .parseFloat(n);
+
+let res = n.toString();
+console.log(res);
