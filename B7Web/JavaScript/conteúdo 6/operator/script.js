@@ -30,3 +30,15 @@ function adicionarInfo(info) {
 };
 
 console.log(adicionarInfo({nome: 'Ruan', sobrenome: 'Richard'}));
+
+
+
+
+// OPERADOR REST
+
+function adicionar(...numeros) {
+    console.log(numeros);
+}
+
+adicionar(1, 2, 3, 4, 5);
+
