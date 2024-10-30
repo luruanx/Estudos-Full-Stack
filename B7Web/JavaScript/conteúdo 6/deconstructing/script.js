@@ -16,3 +16,11 @@ let pessoa = {
 
 let {nome:newNome, sobrenome, idade} = pessoa;
 let {face, insta} = pessoa.social;
+
+
+
+// Deconstructing Array
+
+let info = ['Ruan', 'Richard', 'Luruan', '@ruann'];
+
+let [nome, sobrenomeA, apelido, instaA] = info;
