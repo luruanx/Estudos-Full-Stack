@@ -42,3 +42,19 @@ function adicionar(...numeros) {
 
 adicionar(1, 2, 3, 4, 5);
 
+
+
+
+
+// INCLUDES
+
+let lista = ['ovo', 'café', 'arroz', 'feijão']
+
+console.log(lista.includes('ovo')); // true or false
+
+
+// REPEAT
+
+let item = 'X'
+console.log(item.repeat(3));
+
