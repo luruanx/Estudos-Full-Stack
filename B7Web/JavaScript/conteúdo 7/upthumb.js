@@ -16,3 +16,17 @@ async function sent() {
     });
 }
 
+
+
+// THUMBNAILS
+
+function show() {
+    let image = document.getElementById("image").files[0];
+
+    let img = document.createElement('img');
+    img.src = URL.createObjectURL(image);
+    img.width = 300;
+
+    document.getElementById("area").appendChild(img);
+}
+
