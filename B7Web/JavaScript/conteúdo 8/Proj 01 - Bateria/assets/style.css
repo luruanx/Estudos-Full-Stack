@@ -126,9 +126,14 @@ h1 {
 /* Footer */
 footer {
     margin-top: 25px;
-    font-size: 0.85rem;
-    color: #606061;
+    font-size: 0.6rem;
+    color: #606061a0;
     letter-spacing: 1px;
+}
+
+footer a {
+    color: #606061;
+    text-decoration: none;
 }
 
 /* Responsive */
