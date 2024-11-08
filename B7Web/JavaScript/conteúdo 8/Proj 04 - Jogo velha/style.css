@@ -81,7 +81,7 @@ h1 {
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
-    color: #b81717;
+    color: #d6bcbc;
     background-color: #120101;
     border: none;
     border-radius: 10px;
@@ -91,6 +91,17 @@ h1 {
 
 .reset:hover {
     background-color: #330404;
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: #ffffff54;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff9e;
 }
 
 /* Design Responsivo */
