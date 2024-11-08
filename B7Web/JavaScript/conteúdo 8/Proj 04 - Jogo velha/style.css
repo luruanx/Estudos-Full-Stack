@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a1414, #691717);
+    color: #ffffff;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #120101;
+}
+
+/* Área do Jogo */
+.area {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #2d3436;
+    background-color: #dfe6e9;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #858588;
+    transform: scale(1.1);
+}
+
+/* Painel de Informações */
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #1e1c1c95;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.infoitem {
+    text-align: center;
+}
+
+.infotitulo {
+    font-size: 1em;
+    color: #525151;
+}
+
+.infocorpo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Botão Reset */
+.reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #b81717;
+    background-color: #120101;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset:hover {
+    background-color: #330404;
+}
+
+/* Design Responsivo */
+@media (max-width: 500px) {
+    .area {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+        gap: 8px;
+    }
+
+    .item {
+        font-size: 2em;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
