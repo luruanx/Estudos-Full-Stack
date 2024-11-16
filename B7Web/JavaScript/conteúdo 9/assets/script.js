@@ -23,7 +23,7 @@ pizzaJson.map((item, index) => {
         qs('.pizzaInfo--desc').innerHTML = pizzaJson[key].description;
         qs('.pizzaInfo--actualPrice').innerHTML = `R$ ${pizzaJson[key].price.toFixed(2)}`;
         qs('.pizzaInfo--size.selected').classList.remove('selected');
-        qsa('.pizzaInfo--size').forEach((size, sizeIndex)=>{
+        qsa('.pizzaInfo--size').forEach((size, sizeIndex) => {
             if (sizeIndex == 2) {
                 size.classList.add('selected');
             }
@@ -35,11 +35,11 @@ pizzaJson.map((item, index) => {
 
         qs('.pizzaWindowArea').style.opacity = 0;
         qs('.pizzaWindowArea').style.display = 'flex';
-        setTimeout(()=>{
+        setTimeout(() => {
             qs('.pizzaWindowArea').style.opacity = 1;
         }, 200);
     })
-    
+
     qs('.pizza-area').append(pizzaItem);
 });
 
