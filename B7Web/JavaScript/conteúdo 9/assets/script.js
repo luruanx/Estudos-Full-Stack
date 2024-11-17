@@ -3,6 +3,7 @@ let modalQt = 1;
 const qs = (el) => document.querySelector(el);
 const qsa = (el) => document.querySelectorAll(el);
 
+// Listagem pizzas
 pizzaJson.map((item, index) => {
     let pizzaItem = qs('.models .pizza-item').cloneNode(true);
 
@@ -31,7 +32,7 @@ pizzaJson.map((item, index) => {
             size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
         });
 
-        qs(',pizzaInfo--qt').innerHTML = modalQt;
+        qs('.pizzaInfo--qt').innerHTML = modalQt;
 
         qs('.pizzaWindowArea').style.opacity = 0;
         qs('.pizzaWindowArea').style.display = 'flex';
@@ -43,3 +44,13 @@ pizzaJson.map((item, index) => {
     qs('.pizza-area').append(pizzaItem);
 });
 
+// Enentos Modal
+function closeModal() {
+    qs('.pizzaWindowArea').style.opacity = 0;
+    setTimeout(() =>{
+        qs('.pizzaWindowArea').style.display = 'none';
+    }, 500)
+}
+qsa('.pizzaInfo--cancelMobileButton, .pizzaInfo--cancelButton').forEach((item) => {
+    item.addEventListener('click', closeModal);
+});
