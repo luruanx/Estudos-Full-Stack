@@ -54,3 +54,21 @@ function closeModal() {
 qsa('.pizzaInfo--cancelMobileButton, .pizzaInfo--cancelButton').forEach((item) => {
     item.addEventListener('click', closeModal);
 });
+
+qs('.pizzaInfo--qtmenos').addEventListener('click', () => {
+    if ( modalQt > 1) {
+        modalQt--;
+        qs('.pizzaInfo--qt').innerHTML = modalQt;
+    }
+});
+qs('.pizzaInfo--qtmais').addEventListener('click', () => {
+    modalQt++;
+    qs('.pizzaInfo--qt').innerHTML = modalQt;
+});
+
+qsa('.pizzaInfo--size').forEach((size, sizeIndex) => {
+    size.addEventListener('click', (e) => {
+        qs('.pizzaInfo--size.selected').classList.remove('selected');
+        e.target.classList.add('selected');
+    })
+});
