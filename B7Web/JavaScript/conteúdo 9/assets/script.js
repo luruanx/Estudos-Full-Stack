@@ -50,7 +50,7 @@ pizzaJson.map((item, index) => {
 // Enentos Modal
 function closeModal() {
     qs('.pizzaWindowArea').style.opacity = 0;
-    setTimeout(() =>{
+    setTimeout(() => {
         qs('.pizzaWindowArea').style.display = 'none';
     }, 500)
 }
@@ -59,7 +59,7 @@ qsa('.pizzaInfo--cancelMobileButton, .pizzaInfo--cancelButton').forEach((item) =
 });
 
 qs('.pizzaInfo--qtmenos').addEventListener('click', () => {
-    if ( modalQt > 1) {
+    if (modalQt > 1) {
         modalQt--;
         qs('.pizzaInfo--qt').innerHTML = modalQt;
     }
@@ -79,11 +79,17 @@ qsa('.pizzaInfo--size').forEach((size, sizeIndex) => {
 qs('.pizzaInfo--addButton').addEventListener('click', () => {
     let size = parseInt(qs('.pizzaInfo--size.selected').getAttribute('data-key'));
 
+    let identifier = pizzaJson[modalKey].id+'@'+size;
+
+    let key = cart.findIndex((item)=> item.identifier = identifier);
+
     cart.push({
-        id:pizzaJson[modalKey].id,
+        identifier,
+        id: pizzaJson[modalKey].id,
         size,
-        qt:modalQt
+        qt: modalQt
     });
 
     closeModal();
 });
+
