@@ -1,8 +1,8 @@
 
 <h1 align="center">
-<picture>
+<!-- <picture>
   <img alt="logo alternado por modo dark" src="assets/img/logosstudy.png">
-</picture>
+</picture> -->
     <p>Evolução nos meus estudos Full stack</p>
 </h1>
 
@@ -18,19 +18,36 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
 
 ### Jornada até aqui:
 
+  ✅ Lógica e Algoritmos <br>
+  ✅ Git e GitHub
+
   Front-end
 
     ✅ HTML5/CSS3
     ✅ JavaScript
     ✅ Bootstrap 4
     ✅ React
-    🔳 ...
+    🔳 Next.js
+    🔳 Jest ou Cypress
+    🔳 Azure ou AWS
+    🔳 WebSocket
+    🔳 CI/CD
 
   Back-end
 
     🔳 Node.js e PHP
     🔳 Laravel ou Express.js
+    🔳 RESTful
+    🔳 Docker
+    🔳 Azure ou AWS
+    🔳 CI/CD
     🔳 ...
+
+  BD
+
+    ✅ MySQL
+    🔳 PostgreSQL
+    🔳 MongoDB
 
   Mobile
 
