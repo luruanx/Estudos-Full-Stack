@@ -14,11 +14,23 @@ export const Circle = () => {
     )
 }
 
+
+
+const getWeekday = () => {
+    return new Intl.DateTimeFormat('pt-BR', { weekday: 'long'}).format(new Date())
+}
+
 export const Person = () => {
+    const name: string = 'Elon Musk';
+    const avatar: string = 'https://files.sunoresearch.com.br/p/uploads/2018/09/Elon-Musk-2-400x300.jpg'
+
     return (
         <>
-            <h1>Elon Musk</h1>
-            <img src="https://files.sunoresearch.com.br/p/uploads/2018/09/Elon-Musk-2-400x300.jpg" alt="" className="w-20"/>
+            <h1>{name} - {getWeekday()}</h1>
+            <img 
+                src={avatar} 
+                alt={avatar} 
+                className="w-20"/>
             <ul>
                 <li>CEO da Tesla</li>
                 <li>CEO da SpaceX</li>
