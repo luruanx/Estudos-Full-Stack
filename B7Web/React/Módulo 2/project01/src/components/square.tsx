@@ -22,11 +22,15 @@ const getWeekday = () => {
 
 type Props = {
     name: string
-    avatar: string
+    avatar?: string
     roles: string[]
 }
 
-export const Person = ({ name, avatar, roles }: Props) => {
+export const Person = ({ 
+    name, 
+    avatar = 'https://png.pngtree.com/element_our/20200610/ourlarge/pngtree-black-default-avatar-image_2237212.jpg' , 
+    roles 
+}: Props) => {
 
     return (
         <div className="p-10">

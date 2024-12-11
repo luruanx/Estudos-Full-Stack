@@ -17,6 +17,11 @@ const Page = () => {
         avatar='https://www.infomoney.com.br/wp-content/uploads/2019/06/jeff-bezos-1.jpg?fit=900%2C600&quality=50&strip=all'
         roles={['CEO da Amazon', 'CEO BlueOrigin']}
       />
+
+      <Person 
+        name='João'
+        roles={['CEO']}
+      />
     </div>
   );
 }
