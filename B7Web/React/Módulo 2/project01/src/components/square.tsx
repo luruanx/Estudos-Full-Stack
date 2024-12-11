@@ -21,19 +21,23 @@ const getWeekday = () => {
 }
 
 export const Person = () => {
-    const name: string = 'Elon Musk';
-    const avatar: string = 'https://files.sunoresearch.com.br/p/uploads/2018/09/Elon-Musk-2-400x300.jpg'
+    const data = {
+        name: 'Elon Musk',
+        avatar: 'https://files.sunoresearch.com.br/p/uploads/2018/09/Elon-Musk-2-400x300.jpg',
+        roles: ['CEO da Tesla', 'CEO SpaceX']
+        
+    }
 
     return (
         <>
-            <h1>{name} - {getWeekday()}</h1>
+            <h1 style={{color: 'red', fontSize: '30px'}}>{data.name} - {getWeekday()}</h1>
             <img 
-                src={avatar} 
-                alt={avatar} 
+                src={data.avatar} 
+                alt={data.name} 
                 className="w-20"/>
             <ul>
-                <li>CEO da Tesla</li>
-                <li>CEO da SpaceX</li>
+                <li>{data.roles[0]}</li>
+                <li>{data.roles[1]}</li>
             </ul>
         </>
     )
