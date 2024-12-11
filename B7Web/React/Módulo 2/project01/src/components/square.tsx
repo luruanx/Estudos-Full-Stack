@@ -17,28 +17,28 @@ export const Circle = () => {
 
 
 const getWeekday = () => {
-    return new Intl.DateTimeFormat('pt-BR', { weekday: 'long'}).format(new Date())
+    return new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(new Date())
 }
 
-export const Person = () => {
-    const data = {
-        name: 'Elon Musk',
-        avatar: 'https://files.sunoresearch.com.br/p/uploads/2018/09/Elon-Musk-2-400x300.jpg',
-        roles: ['CEO da Tesla', 'CEO SpaceX']
-        
-    }
+type Props = {
+    name: string
+    avatar: string
+    roles: string[]
+}
+
+export const Person = ({ name, avatar, roles }: Props) => {
 
     return (
-        <>
-            <h1 style={{color: 'red', fontSize: '30px'}}>{data.name} - {getWeekday()}</h1>
-            <img 
-                src={data.avatar} 
-                alt={data.name} 
-                className="w-20"/>
+        <div className="p-10">
+            <h1 style={{ color: 'red', fontSize: '30px' }}>{name} - {getWeekday()}</h1>
+            <img
+                src={avatar}
+                alt={name}
+                className="w-20" />
             <ul>
-                <li>{data.roles[0]}</li>
-                <li>{data.roles[1]}</li>
+                <li>{roles[0]}</li>
+                <li>{roles[1]}</li>
             </ul>
-        </>
+        </div>
     )
 }
