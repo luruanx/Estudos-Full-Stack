@@ -23,17 +23,11 @@ const Page = () => {
       /> */}
 
 
-      <Card>
-        <>
-          <h3 className='text-3xl'>Frase de efeito</h3>
-          <p>Autor desconhecido</p>
-        </>
-        
-      </Card>
+      <Card phrase="Alguma frase top" author='Coach de milhões' />
 
       
     </div>
-  );
+  )
 }
 
 export default Page;
