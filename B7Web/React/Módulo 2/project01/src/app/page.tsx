@@ -34,22 +34,36 @@
 
 
 
+
 import { Person } from "@/components/person";
 import { peopleList } from "@/data/peopleList";
 
 const Page = () => {
+
+  const chemists = peopleList.filter(person => person.profession === 'chemist')
 
   return (
     <div>
       <h1 className="font-bold text-2xl">Olá Mundo</h1>
       <h3>Outro texto</h3> <br />
 
-      <ul>
-        {peopleList.map(person => 
-          <li key={person.id}>{person.name} - {person.profession}</li>
-        )}
-      </ul>
-
+      {chemists.length > 0 && 
+        <>
+          <h3>Lista de químicos:</h3>
+          <ul>
+            {chemists.map(person => 
+              <li key={person.id}>{person.name}</li>
+            )}
+          </ul>
+        </>
+      }
+      {/* {peopleList.length > 0 &&
+        <ul>
+          {peopleList.map(person => 
+            <li key={person.id}>{person.name} - {person.profession}</li>
+          )}
+        </ul>
+      } */}
     </div>
   )
 }
