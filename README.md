@@ -26,8 +26,9 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
     ✅ HTML5/CSS3
     ✅ JavaScript
     ✅ Bootstrap 4
-    ✅ React
-    🔳 Next.js
+    ✅ React  
+    ✅ TypeScritp
+    ✅ Next.js
     🔳 Jest ou Cypress
     🔳 Azure ou AWS
     🔳 WebSocket
@@ -57,7 +58,7 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
 ### Tecnologias Utilizadas:
 <div style="display: inline_block">
   
-  [![My Skills](https://skillicons.dev/icons?i=js,react,bootstrap,html,css,php,figma,pr)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=js,ts,next,react,bootstrap,html,css,php,figma,pr)](https://skillicons.dev)
 </div>
  <br>
  
