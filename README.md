@@ -58,7 +58,7 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
 ### Tecnologias Utilizadas:
 <div style="display: inline_block">
   
-  [![My Skills](https://skillicons.dev/icons?i=js,ts,next,react,bootstrap,html,css,php,figma,pr)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=js,tailwind,ts,next,react,html,css,php,figma,pr)](https://skillicons.dev)
 </div>
  <br>
  
@@ -71,8 +71,8 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
 
   <div align="center">
 
-  Estou total aberto a conselhos, elogios ou sugestões. **"Todo conhecimento é bem vindo!"**
+  Estou total aberto á conselhos, elogios ou sugestões. **"Todo conhecimento é bem vindo!"**
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luaanriichard/) [![Email](https://img.shields.io/badge/Email-%230077B5.svg?logo=Gmail&logoColor=white)](mailto:richard_10luan@hotmail.com)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luruanx) [![Email](https://img.shields.io/badge/Email-%230077B5.svg?logo=Gmail&logoColor=white)](mailto:richard_10luan@hotmail.com)
 
 </div>
