@@ -25,7 +25,7 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
 
     ✅ HTML5/CSS3
     ✅ JavaScript
-    ✅ Bootstrap 4
+    ✅ Tailwind
     ✅ React  
     ✅ TypeScritp
     ✅ Next.js
