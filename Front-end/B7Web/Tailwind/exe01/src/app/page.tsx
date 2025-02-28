@@ -31,6 +31,69 @@ const Page = () => (
         <div className="rounded-full px-3 py-1 text-sm bg-green-700 text-white">Piscina</div>
       </div>
     </div>
+
+
+    {/* TABELA */}
+    <table className="m-8 w-full">
+      <thead>
+        <tr className="border-b text-left text-sm border-gray-200">
+          <th className="py-2">Nome</th>
+          <th className="hidden md:table-cell">Título</th>
+          <th className="hidden md:table-cell">Email</th>
+          <th>Função</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr className="border-b text-left text-sm text-gray-400 border-gray-200">
+          <td className="py-2">
+            <p className="font-bold text-black">Maria da Silva</p>
+            <p className="block md:hidden">Cafezeira</p>
+            <p className="block md:hidden">mariadoca@gmail.com</p>
+          </td>
+          <td className="hidden md:table-cell">Cafezeira</td>
+          <td className="hidden md:table-cell">mariadoca@gmail.com</td>
+          <td>Membro</td>
+          <td>
+            <a href="">editar</a>
+          </td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr className="border-b text-left text-sm text-gray-400 border-gray-200">
+          <td className="py-2">
+            <p className="font-bold text-black">Maria da Silva</p>
+            <p className="block md:hidden">Cafezeira</p>
+            <p className="block md:hidden">mariadoca@gmail.com</p>
+          </td>
+          <td className="hidden md:table-cell">Cafezeira</td>
+          <td className="hidden md:table-cell">mariadoca@gmail.com</td>
+          <td>Membro</td>
+          <td>
+            <a href="">editar</a>
+          </td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr className="border-b text-left text-sm text-gray-400 border-gray-200">
+          <td className="py-2">
+            <p className="font-bold text-black">Maria da Silva</p>
+            <p className="block md:hidden">Cafezeira</p>
+            <p className="block md:hidden">mariadoca@gmail.com</p>
+          </td>
+          <td className="hidden md:table-cell">Cafezeira</td>
+          <td className="hidden md:table-cell">mariadoca@gmail.com</td>
+          <td>Membro</td>
+          <td>
+            <a href="">editar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 );
 
