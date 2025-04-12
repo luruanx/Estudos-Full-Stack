@@ -7,7 +7,6 @@ export const Footer = () => {
             <div className="my-5 text-center text-sm opacity-50">
                 Criado por <a className="hover:underline" href="https://github.com/luruanx">Luruanx</a>
             </div>
-            
         </footer>
     )
 }
