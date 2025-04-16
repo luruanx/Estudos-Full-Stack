@@ -5,3 +5,11 @@ CREATE TABLE Produtos (
     preco DECIMAL(18,2),
     imagem_url NVARCHAR(2083)
 )
+
+database name: diolab001databasename
+server name: diolab001westus2servername
+
+user adm: ruanrichard10luruanadm
+senha: Pa$$wordRR2025admIN19
+
+storage account name: diolab001storageaccname
