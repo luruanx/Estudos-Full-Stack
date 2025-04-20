@@ -123,10 +123,10 @@ header {
     display: flex;
     align-items: center;
 }
-.user-login img {
-    width: 26px;
-    height: 26px;
-    margin-right: 3px;
+.user-login i {
+    font-size: 1.5rem;
+    margin-right: 7px;
+    color: var(--color-primary);
 }
 .user-login p {
     font-size: 14px;
@@ -184,12 +184,12 @@ nav a.menu-option1 {
     font-weight: 700;
     display: flex;
     padding-top: 0;
+    align-items: center;
 }
-nav a svg {
-    width: 14px;
+nav a i {
     margin-right: 6px;
 }
-nav a svg:hover,
+nav a i:hover,
 nav a.menu-option1:hover {
     color: var(--color-primary);
     fill: var(--color-primary);
@@ -224,7 +224,8 @@ nav a.menu-option1:hover {
     margin-bottom: 5px;
     transition: background-color 0.3s;
 }
-.departamentos div:hover{
+.departamentos div:hover,
+.departamentos div.ativo {
     color: var(--color-primary);
 }
 .departamentos .name-dep {
@@ -233,9 +234,10 @@ nav a.menu-option1:hover {
     font-size: 14px;
     font-weight: 700;
     color: #303030;
+    align-items: center;
 }
-.departamentos .name-dep svg {
-    width: 13px;
+.name-dep i {
+    font-size: .6rem;
 }
 .departamentos::-webkit-scrollbar {
     width: 20px;
@@ -250,16 +252,18 @@ nav a.menu-option1:hover {
     border-top: 15px solid #F5F5F5;
 }
 .categorias-box {
-    position: absolute;
-    left: 235px;
+    position: relative;
+    left: 0;
     top: 0;
-    width: 600px;
+    width: 1020px;
     height: 329px;
     background-color: var(--color-white);
-    padding: 12px 33px;
+    padding: 12px 18px 12px 33px;
     display: none;
     z-index: 5;
     box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.364);
+    display: flex;
+    justify-content: space-between;
 }
 
 .categorias-row {
@@ -284,4 +288,43 @@ nav a.menu-option1:hover {
 
 .categoria-col a:hover {
     color: var(--color-primary);
+}
+
+.banner-lateral {
+    display: none;
+    width: 236px;
+    height: 298px;
+    border-radius: 10px;
+    height: 100%;
+    background-image: url(img/cup.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 80px 50px 26px;
+    z-index: 10;
+}
+
+.banner-content {
+    width: 128px;
+    height: 207px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--color-white);
+    z-index: 11;
+}
+.banner-content span {
+    font-size: 700;
+}
+.banner-content a {
+    width: 116px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px var(--color-white);
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
 }
