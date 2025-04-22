@@ -144,10 +144,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -163,7 +163,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
   },
 });

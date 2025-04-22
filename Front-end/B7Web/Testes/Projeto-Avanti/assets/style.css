@@ -427,6 +427,7 @@ menu menuitem a:hover {
 .carousel-content {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 .carousel-tittle {
     display: flex;
@@ -463,6 +464,68 @@ menu menuitem a:hover {
 }
 .swiper-pagination-bullet-active {
     background-color: var(--color-gray-text) !important;
+}
+.swiper-button-prev::after {
+    background-image: url('./img/icon/arrow-circle-prev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: #ffffff00;
+    left: -22px;
+    bottom: 20px;
+    position: absolute !important;
+}
+.swiper-button-prev:hover::after {
+    background-image: url('./img/icon/arrow-circle-prev-hover.png');
+    transition: all 0.7s ease-in-out;
+}
+.swiper-button-prev.swiper-button-disabled::after {
+    background-image: url('./img/icon/arrow-circle-prev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: #ffffff00;
+    left: -22px;
+    bottom: 20px;
+    position: absolute !important;
+}
+
+.swiper-button-next::after {
+    background-image: url('./img/icon/arrow-circle-next.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: #ffffff00;
+    left: 20px;
+    bottom: 20px;
+    position: absolute !important;
+}
+.swiper-button-next:hover::after {
+    background-image: url('./img/icon/arrow-circle-next-hover.png');
+    transition: all 0.7s ease-in-out;
+}
+    
+.swiper-button-next.swiper-button-disabled::after {
+    background-image: url('./img/icon/arrow-circle-next.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: #ffffff00;
+    left: 20px;
+    bottom: 20px;
+    position: absolute !important;
 }
 /* carousel-block */
 .carousel-block {
