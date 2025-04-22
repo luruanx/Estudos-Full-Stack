@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --color-primary: #005CFF;
@@ -12,18 +12,19 @@
     --color-black: #060606;
 
     --fonte-main: "Nunito", sans-serif;
-    --fonte-secondary: "Open Sans", Helvetica, sans-serif;
+    --fonte-secondary: "Nunito Sans", sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte-main);
+    
 }
 
 body {
     background-color: var(--color-white);
+    font-family: var(--fonte-main);
 }
 
 /* UTILITIES */
@@ -36,7 +37,7 @@ body {
 }
 .menu-ham {
     display: none;
-}
+} 
 
 /* HEADER */
 .coupon {
@@ -178,7 +179,7 @@ nav menuitem:hover .menu-content {
 menu menuitem a {
     font-size: 13px;
     font-weight: 400;
-    padding-top: 2px;
+    padding-top: 1px;
     display: block;
     position: relative;
     white-space: nowrap;
@@ -209,12 +210,11 @@ menu menuitem a:hover {
     top: 100%;
     left: -8px;
     z-index: 10;
-    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.364);
+    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
 }
 .menu-container-dep {
     display: flex;
     position: relative;
-    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.364);
 }
 .departamentos {
     background-color: #F5F5F5;
@@ -270,7 +270,6 @@ menu menuitem a:hover {
     padding: 12px 18px 12px 33px;
     display: none;
     z-index: 5;
-    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.364);
     display: flex;
     justify-content: space-between;
 }
@@ -339,17 +338,20 @@ menu menuitem a:hover {
 }
 
 /* category block menu2 */
+.cat-box2 {
+    position: relative;
+}
 .menuitem-box {
     position: absolute;
-    top: 133px;
-    left: 131px;
+    top: 0;
+    left: -8px;
     width: 1258.5px;
     height: 329px;
     background-color: var(--color-white);
     padding: 12px 18px 12px 20px;
     display: none;
     z-index: 10;
-    box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.573);
+    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
 }
 .menuitem-title {
@@ -410,4 +412,128 @@ menu menuitem a:hover {
     font-size: 60px;
     font-weight: 700;
     color: var(--color-primary);
+}
+
+/* section-carousel */
+.section-carousel {
+    background-color: #5EC0BE;
+    padding: 100px 0;
+    font-family: var(--fonte-secondary);
+}
+.sec-carousel-content {
+    background-color: #656565;
+    width: 100%;
+    height: 478px;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-tittle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: -22px 0 20px;
+}
+.carousel-tittle h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.carousel-tittle > button {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+.carousel-tittle button:hover {
+    text-decoration: underline;
+}
+.carousel-block {
+    width: 238px;
+    height: 409px;
+    border: solid 1px var(--color-gray2);
+    border-radius: 10px;
+    padding: 7px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-h {
+    width: 100%;
+    background-color: #656565;
+}
+.highlight {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 700;
+    width: 41px;
+    height: 22px;
+    background-color: #00264E;
+    border-radius: 4px;
+    color: var(--color-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-img img {
+    height: 222px;
+}
+.carousel-description {
+    color: var(--color-gray-text);
+}
+.carousel-description h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 7px 0 5px 0;
+}
+.real-price {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.real-price p {
+    text-decoration: line-through;
+}
+.real-price span {
+    font-size: 16px;
+    font-weight: 700;
+}
+.real-price .discount {
+    font-size: 11px;
+    font-weight: 700;
+    width: 64px;
+    height: 20px;
+    background-color: #5EC0BE;
+    display: flex;
+    color: var(--color-white);
+    text-decoration: underline;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+.card-price {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.card-price > span {
+    font-weight: 700;
+}
+.carousel-block button {
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+.carousel-block button:hover {
+    background-color: #0344b4;
 }
