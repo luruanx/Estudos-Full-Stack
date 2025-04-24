@@ -68,11 +68,16 @@ header {
     background-color: var(--color-white);
     box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.364);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .header-main {
-    max-width: 1080px;
+    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
-    padding: 13px 0 0;
+    padding: 13px 30px 0;
     background-color: var(--color-white);
 }
 
@@ -107,7 +112,7 @@ header {
     cursor: text;
     z-index: 0;
     padding-left: 20px;
-    margin-left: -240px;
+    margin-left: -260px;
 }
 .header-input input::placeholder {
     font-size: 0.7rem;
@@ -204,13 +209,12 @@ header {
 /* header-nav */
 nav > menu {
     display: flex;
-    justify-content: space-between;
 }
 nav menuitem {
     position: relative;
     cursor: pointer;
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 15px; 
 }
 nav menuitem:hover .menu-content {
     display: flex;
@@ -231,6 +235,8 @@ nav a.menu-option1 {
     display: flex;
     padding-top: 0;
     align-items: center;
+    overflow: none;
+    margin-right: 40px;
 }
 nav a i {
     margin-right: 6px;
@@ -241,6 +247,16 @@ menu menuitem a:hover {
     color: var(--color-primary);
     fill: var(--color-primary);
 }
+.menuitem-dep-full {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    flex-wrap: nowrap;
+    overflow: hidden; 
+}
+.menuitem-dep {
+    min-width: 80px;
+}
 
 /* menu1 block */
 .menu-content {
@@ -250,10 +266,14 @@ menu menuitem a:hover {
     left: -8px;
     z-index: 10;
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
+    width: 93vw;
+    max-width: 1080px;
 }
 .menu-container-dep {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
+    width: 100%;
 }
 .departamentos {
     background-color: #F5F5F5;
@@ -301,7 +321,7 @@ menu menuitem a:hover {
     position: relative;
     left: 0;
     top: 0;
-    width: 870px;
+    width: calc(100% - 212px);
     height: 300px;
     background-color: var(--color-white);
     padding: 8px 18px 8px 33px;
@@ -309,12 +329,15 @@ menu menuitem a:hover {
     z-index: 5;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .categorias-row {
     display: flex;
     justify-content: flex-start;
     background-color: var(--color-white);
-    gap: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 .categoria-col {
     display: flex;
@@ -377,25 +400,35 @@ menu menuitem a:hover {
 /* category block menu2 */
 .cat-box2 {
     position: relative;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .menuitem-box {
     position: absolute;
     top: 0;
     left: -8px;
-    width: 1080px;
+    width: 104%;
     height: 300px;
+    gap: 20px;
+    flex-wrap: wrap;
     background-color: var(--color-white);
     padding: 8px 18px 8px 20px;
     display: none;
     z-index: 10;
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
+    
+    background-color: red;
 }
 .menuitem-title {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #303030;
+}
+#menuitemCategoriasContent{
+    gap: 100px;
 }
 
 /* BANNER SECTION ----------------------------*/
@@ -485,6 +518,7 @@ menu menuitem a:hover {
     text-decoration: none;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .carousel-tittle button:hover {
     text-decoration: underline;
@@ -973,6 +1007,18 @@ footer {
 
 
 
+
+
+/* RESPONSIVENESS ----------------------------------*/
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1080px) {
+    .header-input input {
+        margin-left: -30px;
+    }
+    .search-popup {
+        left: -30px;
+    }
+}
 
 
 
