@@ -824,8 +824,7 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 600px;
-    background-color: red;
+    height: 100%;
     font-family: var(--fonte-secondary);
 }
 .footer-content {
@@ -884,7 +883,8 @@ footer {
 .footer-menu-subs h5:hover {
     color: var(--color-primary);
 }
-.footer-sub-itens h5 span {
+.footer-sub-itens p span {
+    font-size: .7rem;
     font-weight: 700;
 }
 .footer-sub-itens p {
@@ -902,6 +902,31 @@ footer {
 .footer-up-pay img {
     width: 500px;
     margin-top: 40px;
+}
+
+/* footer-down */
+.footer-content2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.footer-down {
+    max-width: 870px;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-down-text {
+    font-size: .7rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 17px;
+    color: var(--color-gray-text);
+}
+.footer-down-partners img {
+    width: 300px;
 }
 
 
