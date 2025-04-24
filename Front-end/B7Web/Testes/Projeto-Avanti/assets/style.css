@@ -752,12 +752,12 @@ menu menuitem a:hover {
     width: 100%;
     height: 170px;
 }
-.sec-newsletter-content h4 {
+.sec-newsletter-content p {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.sec-newsletter-content h4 span {
+.sec-newsletter-content p span {
     color: var(--color-primary);
 }
 .newsletter-block {
@@ -816,4 +816,114 @@ menu menuitem a:hover {
 }
 .btn-news:hover {
     background-color: #0651d3;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    font-family: var(--fonte-secondary);
+}
+.footer-content {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 60px;
+}
+.footer-up {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+.footer-up-menus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-m-logo {
+    margin-right: 70px;
+}
+.footer-m-logo > img {
+    width: 135px;
+    margin: 0 0 20px 4px;
+    padding-top: 4px;
+}
+.footer-social img {
+    width: 25px;
+    margin-right: 20px;
+}
+.footer-social img:hover {
+    opacity: .7;
+}
+.footer-menu-subs {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-menu-subs h4 {
+    font-weight: 700;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+.footer-sub-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-menu-subs a {
+    text-decoration: none;
+}
+.footer-sub-itens h5 {
+    font-size: .7rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+.footer-menu-subs h5:hover {
+    color: var(--color-primary);
+}
+.footer-sub-itens h5 span {
+    font-weight: 700;
+}
+.footer-sub-itens p {
+    font-size: .6rem;
+    line-height: 15px;
+}
+.seta {
+    display: none;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.fa-chevron-down {
+    display: none !important;
+}
+.footer-up-pay img {
+    width: 500px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 468px) {
+    .seta {
+        display: inline-block;
+    }
+    .fa-chevron-down {
+        display: inline-block !important;
+    }
+
+    .footer-sub-itens {
+        display: none;
+    }
+
+    .footer-menu-subs.ativo .footer-sub-itens {
+        display: flex;
+    }
 }

@@ -1,4 +1,4 @@
-// JS RESPONSÁVEL PELO CONTROLE DO NAV MENU
+// JS RESPONSÁVEL PELO CONTROLE DO NAV MENU ---------------------
 
 const categoriasData = [
   [["Cat 1.1", "#"], ["Cat 1.2", "#"], ["Cat 1.3", "#"],
@@ -135,8 +135,7 @@ document.addEventListener("mousemove", (e) => {
 
 
 
-
-
+// JS RESPONSÁVEL PELO CARROSEL DOS PRODUTOS -------------------------
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -167,3 +166,4 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
