@@ -52,7 +52,7 @@ const categoriasData = [
 const departamentos = document.querySelectorAll(".departamentos div");
 const categoriasContent = document.getElementById("categoriasContent");
 const categoriasBox = document.getElementById("categoriasBox");
-const bannerLateral = document.getElementById("bannerLateral");
+const catBannerLateral = document.getElementById("catBannerLateral");
 const menuTrigger = document.querySelector(".menu-option1");
 
 const menuitemBox = document.getElementById("menuitemCategoriasBox");
@@ -88,7 +88,7 @@ departamentos.forEach(dep => {
     const index = dep.getAttribute("data-dept");
     mostrarCategorias(index, categoriasContent);
     categoriasBox.style.display = "flex";
-    bannerLateral.style.display = "block";
+    catBannerLateral.style.display = "block";
   });
 });
 
@@ -96,7 +96,7 @@ departamentos.forEach(dep => {
 menuTrigger.addEventListener("mouseenter", () => {
   mostrarCategorias(0, categoriasContent);
   categoriasBox.style.display = "flex";
-  bannerLateral.style.display = "block";
+  catBannerLateral.style.display = "block";
 });
 
 // exibi as categorias do menuitem-dep
