@@ -167,3 +167,68 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+// JS RESPONSÁVEL PELO INPUT DE BUSCA -------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("searchInput");
+  const btn = document.getElementById("searchBtn");
+  const popup = document.getElementById("searchPopup");
+  const wrapper = document.getElementById("searchWrapper");
+
+  function realizarBusca() {
+    const termo = input.value.trim().toLowerCase();
+    popup.innerHTML = "";
+    popup.style.display = "none";
+
+    if (!termo) return;
+
+    const links = document.querySelectorAll("a");
+    const encontrados = [];
+
+    links.forEach(link => {
+      if (link.textContent.toLowerCase().includes(termo)) {
+        encontrados.push(link.cloneNode(true));
+      }
+    });
+
+    const message = document.createElement("div");
+    message.className = "message";
+    message.innerText = `Você buscou por: '${termo}'`;
+    popup.appendChild(message);
+
+    const results = document.createElement("div");
+    results.className = "results";
+
+    if (encontrados.length === 0) {
+      results.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+    } else {
+      encontrados.forEach((link, i) => {
+        results.appendChild(link);
+      });
+    }
+
+    popup.appendChild(results);
+    popup.style.display = "block";
+  }
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    realizarBusca();
+  });
+
+  input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      realizarBusca();
+    }
+  });
+
+  // Fechar ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (!wrapper.contains(e.target)) {
+      popup.style.display = "none";
+      popup.innerHTML = "";
+      input.value = "";
+    }
+  });
+});

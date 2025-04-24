@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avanti</title>
 
-    <!------------------- Favicon -->
+    <!-------------------- Favicon -->
     <link rel="shortcut icon" href="assets/img/icon/favicon.png" type="image/x-icon">
-    <!------------------- CSS -->
+    <!-------------------- CSS -->
     <link rel="stylesheet" href="assets/style.css">
-    <!------------------- JavaScript -->
+    <!-------------------- JavaScript -->
     <script src="assets/script.js" defer></script>
-    <!------------------- Font Awesome -->
+    <!-------------------- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-------------------- Link Swiper's CSS ------------------>
+    <!-------------------- Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-------------------- AOS Animation ------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +31,13 @@
             <div class="header-logo">
                 <a href="#"><img src="assets/img/LogoAvanti.png" alt="logo Avanti"></a>
                 
-                <div class="header-input">
-                    <input type="search" name="search" placeholder="Digite aqui o que você procura">
-                    <a href="#"><img src="assets/img/icon/search.png" alt=""></a>
-                </div>
+                <div class="header-input" id="searchWrapper">
+                    <input type="search" id="searchInput" name="search" placeholder="Digite aqui o que você procura" />
+                    
+                    <a id="searchBtn"><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" /></a>
+                
+                    <div class="search-popup" id="searchPopup" style="display: none;"></div>
+                  </div>
 
                 <div class="header-cart">
                     <div class="user-login">
@@ -202,7 +207,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -237,7 +242,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -272,7 +277,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -307,7 +312,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -342,7 +347,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -377,7 +382,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -412,7 +417,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -452,7 +457,7 @@
     <main>
         <!-- MAIN SECTION ONE -->
         <section class="section-main-one">
-            <div class="sec-one-content container">
+            <div class="sec-one-content container" data-aos="zoom-in-up">
                 <div class="one-banner">
                     <img src="assets/img/cup-one.png" alt="">
                 </div>
@@ -468,7 +473,7 @@
 
         <!-- MAIN SECTION TWO -->
         <section class="section-main-two">
-            <div class="sec-two-content container">
+            <div class="sec-two-content container" data-aos="zoom-in-up">
 
                 <div class="two-text">
                     <h2>Lorem Ipsum</h2>
@@ -506,7 +511,7 @@
 
         <!-- MAIN SECTION ONE -->
         <section class="section-main-one">
-            <div class="sec-one-content container">
+            <div class="sec-one-content container" data-aos="zoom-in-up">
                 <div class="one-banner">
                     <img src="assets/img/cup-one.png" alt="">
                 </div>
@@ -523,7 +528,7 @@
 
     <!-- CAROUSEL SECTION -->
     <section class="section-carousel">
-        <div class="sec-carousel-content container">
+        <div class="sec-carousel-content container" data-aos="zoom-in-up">
             <div class="carousel-tittle">
                 <h2>Lançamentos</h2>
                 <button type="button">Ver mais</button>
@@ -543,7 +548,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -578,7 +583,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -613,7 +618,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -648,7 +653,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -683,7 +688,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -718,7 +723,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -753,7 +758,7 @@
                                 </div>
                                 
                                 <div class="carousel-img">
-                                    <img src="assets/img/product.png" alt="jovem com blusa branca">
+                                    <a href="#"><img src="assets/img/product.png" alt="jovem com blusa branca"></a>
                                 </div>
             
                                 <div class="carousel-description">
@@ -837,7 +842,7 @@
                         </h4>
                 
                         <div class="footer-sub-itens">
-                            <a href="#">
+                            <a href="https://github.com/luruanx">
                                 <h5>Sobre nós</h5>
                             </a>
                             <a href="#">
@@ -924,10 +929,12 @@
 
     </section>
 
+    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS RESPONSÁVEL PELO DROPDOWN FOTTER MOBILE -->
     <script>
-        // JS RESPONSÁVEL PELO DROPDOWN FOTTER MOBILE 
         document.addEventListener("DOMContentLoaded", () => {
             const toggles = document.querySelectorAll(".footer-sub-toggle");
 
@@ -939,6 +946,9 @@
                 });
             });
         });
+
+        // AOS install
+        AOS.init();
     </script>
 </body>
 

@@ -122,6 +122,9 @@ header {
 .header-input input:focus {
     box-shadow: 0 0 0 1px var(--color-gray);
 }
+.header-input input::-webkit-search-cancel-button {
+    display: none;
+}
 .header-input a img {
     width: 17px;
     height: 17px;
@@ -130,7 +133,40 @@ header {
     top: .4rem;
     fill: #bdbecb;
     z-index: 1;
+    cursor: pointer;
 }
+/* Bloco de resultado flutuante */
+.search-popup {
+    position: absolute;
+    top: 40px;
+    left: -241px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+}
+.search-popup .message {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.search-popup .results {
+    max-height: 150px;
+    overflow-y: auto;
+}
+.search-popup .results a {
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+.search-popup .results a:hover {
+    background-color: #eee;
+}
+
 .header-cart {
     display: flex;
     justify-content: flex-end;
@@ -560,9 +596,15 @@ menu menuitem a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 .carousel-img img {
     height: 200px;
+    will-change: transform;
+    transition: transform 0.4s ease;
+}
+.carousel-img a img:hover {
+    transform: scale(.95);
 }
 .carousel-description {
     color: var(--color-gray-text);
@@ -630,7 +672,7 @@ menu menuitem a:hover {
     padding: 55px;
 }
 .sec-one-content {
-    height: 620px;
+    height: 550px;
     max-width: 980px;
     gap: 30px;
 }
@@ -644,7 +686,7 @@ menu menuitem a:hover {
     justify-content: center;
 }
 .one-banner img {
-    width: 523px;
+    width: 500px;
 }
 .one-text {
     height: 500px;
@@ -654,13 +696,13 @@ menu menuitem a:hover {
     gap: 25px;
 }
 .one-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4%;
 }
 .one-text p {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 400;
 }
 
@@ -670,7 +712,7 @@ menu menuitem a:hover {
     background-color: var(--color-gray2);
 }
 .sec-two-content {
-    height: 620px;
+    height: 550px;
     max-width: 980px;
     gap: 50px;
 }
@@ -691,18 +733,18 @@ menu menuitem a:hover {
 }
 .two-text-icon img {
     background-color: var(--color-primary);
-    padding: 16px;
+    padding: 10px;
     border-radius: 50%;
 }
 .two-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4%;
     margin-bottom: 20px;
 }
 .two-text-icon p {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 400;
     letter-spacing: 5%;
 }
