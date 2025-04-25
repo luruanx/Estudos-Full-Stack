@@ -29,7 +29,21 @@
 
         <div class="header-main">
             <div class="header-logo">
-                <a href="#"><img src="assets/img/LogoAvanti.png" alt="logo Avanti"></a>
+                
+                <!-- menu-mobile -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- blur -->
+                <div class="mobile-overlay" id="mobileOverlay"></div>
+                <!-- menu mobile content -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-close" id="mobileClose">✖</div>
+                    <div class="mobile-deps" id="mobileDeps"></div>
+                </div>
+
+                <!-- desktop header -->
+                <a href="#" class="main-logo"><img src="assets/img/LogoAvanti.png" alt="logo Avanti"></a>
                 
                 <div class="header-input" id="searchWrapper">
                     <input type="search" id="searchInput" name="search" placeholder="Digite aqui o que você procura" />
@@ -37,7 +51,7 @@
                     <a id="searchBtn"><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" /></a>
                 
                     <div class="search-popup" id="searchPopup" style="display: none;"></div>
-                  </div>
+                </div>
 
                 <div class="header-cart">
                     <div class="user-login">

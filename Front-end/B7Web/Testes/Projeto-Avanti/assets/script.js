@@ -48,7 +48,6 @@ const categoriasData = [
   ],
 ];
 
-
 const departamentos = document.querySelectorAll(".departamentos div");
 const categoriasContent = document.getElementById("categoriasContent");
 const categoriasBox = document.getElementById("categoriasBox");
@@ -135,6 +134,101 @@ document.addEventListener("mousemove", (e) => {
 
 
 
+
+// JS RESPONSÁVEL PELO MENU MOBILE ------------------------
+const mobileToggle = document.getElementById("mobileToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileOverlay = document.getElementById("mobileOverlay");
+const mobileClose = document.getElementById("mobileClose");
+const mobileDeps = document.getElementById("mobileDeps");
+
+const mobileCategoriasData = [
+  Array.from({ length: 24 }, (_, i) => [`Categoria 1.${i + 1}`, "#"]),
+  Array.from({ length: 24 }, (_, i) => [`Categoria 2.${i + 1}`, "#"]),
+  Array.from({ length: 24 }, (_, i) => [`Categoria 3.${i + 1}`, "#"]),
+];
+
+let activeSub = null;
+let activeDep = null;
+
+function gerarSubcategorias(index, submenuEl) {
+  submenuEl.innerHTML = "";
+  mobileCategoriasData[index].forEach(([nome, link]) => {
+    const a = document.createElement("a");
+    a.href = link;
+    a.textContent = nome;
+    submenuEl.appendChild(a);
+  });
+}
+
+function criarDepartamentoMobile(nome, index) {
+  const wrapper = document.createElement("div");
+  const dep = document.createElement("div");
+  dep.classList.add("mobile-dep");
+
+  const span = document.createElement("span");
+  span.textContent = nome;
+
+  const arrow = document.createElement("span");
+  arrow.classList.add("arrow");
+  arrow.innerHTML = "▶";
+
+  dep.appendChild(span);
+  dep.appendChild(arrow);
+
+  const submenu = document.createElement("div");
+  submenu.classList.add("mobile-submenu");
+
+  dep.addEventListener("click", () => {
+    const isActive = dep.classList.contains("active");
+    if (activeSub && activeSub !== submenu) {
+      activeSub.classList.remove("active");
+      activeDep?.classList.remove("active");
+    }
+    if (isActive) {
+      submenu.classList.remove("active");
+      dep.classList.remove("active");
+      activeSub = null;
+      activeDep = null;
+    } else {
+      gerarSubcategorias(index, submenu);
+      submenu.classList.add("active");
+      dep.classList.add("active");
+      activeSub = submenu;
+      activeDep = dep;
+    }
+  });
+
+  wrapper.appendChild(dep);
+  wrapper.appendChild(submenu);
+  mobileDeps.appendChild(wrapper);
+}
+
+mobileCategoriasData.forEach((_, i) => criarDepartamentoMobile(`Departamento ${i + 1}`, i));
+
+mobileToggle.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+  mobileOverlay.classList.add("active");
+});
+
+mobileClose.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  mobileOverlay.classList.remove("active");
+});
+
+mobileOverlay.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  mobileOverlay.classList.remove("active");
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) {
+    mobileMenu.classList.remove("active");
+    mobileOverlay.classList.remove("active");
+  }
+});
+
+
 // JS RESPONSÁVEL PELO CARROSEL DOS PRODUTOS -------------------------
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -152,15 +246,19 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    640: {
+    290: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
-    768: {
+    690: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    900: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
-    1024: {
+    1079: {
       slidesPerView: 5,
       spaceBetween: 10,
     },
