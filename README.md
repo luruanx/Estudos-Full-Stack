@@ -29,8 +29,8 @@ Ser um desenvolvedor full-stack para ampliar as minhas oportunidades de carreira
     ✅ React  
     ✅ TypeScritp
     ✅ Next.js
-    🔳 Jest ou Cypress
-    🔳 Azure ou AWS
+    ✅ Cypress
+    ✅ Azure
     🔳 WebSocket
     🔳 CI/CD
 
