@@ -10,7 +10,6 @@ ${HEADER-ELETRONICOS}    //span[contains(text(),'Navegue por categoria')]
 *** Keywords ***
 Abrir o navegador
     Open Browser    browser=chrome
-options=add_experimental_option("detach", True)
 
 Fechar o navegador
     Capture Page Screenshot
