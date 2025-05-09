@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-09T01:29:22.152808" rpa="false" schemaversion="5">
+<suite id="s1" name="Exe01-Lista-Dic" source="L:\Coder\Estudos-Full-Stack\QA\Robot Framework\UDM s4\VariaveisEscoposArgumentos\exe01-lista-dic.robot">
+<test id="s1-t1" name="Caso de teste do log" line="33">
+<kw name="Uma keyword de log">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.180908" level="INFO">mês: janeiro</msg>
+<arg>mês: ${MESES[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.180424" elapsed="0.000545"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.181442" level="INFO">mês: fevereiro</msg>
+<arg>mês: ${MESES[1]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.181074" elapsed="0.000409"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.181829" level="INFO">mês: março</msg>
+<arg>mês: ${MESES[2]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.181561" elapsed="0.000298"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.182165" level="INFO">mês: abril</msg>
+<arg>mês: ${MESES[3]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.181918" elapsed="0.000274"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.182528" level="INFO">mês: maio</msg>
+<arg>mês: ${MESES[4]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.182251" elapsed="0.000307"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.182891" level="INFO">mês: junho</msg>
+<arg>mês: ${MESES[5]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.182645" elapsed="0.000273"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.183245" level="INFO">mês: julho</msg>
+<arg>mês: ${MESES[6]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.182974" elapsed="0.000299"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.183642" level="INFO">mês: agosto</msg>
+<arg>mês: ${MESES[7]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.183344" elapsed="0.000326"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.184002" level="INFO">mês: setembro</msg>
+<arg>mês: ${MESES[8]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.183734" elapsed="0.000297"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.184345" level="INFO">mês: outubro</msg>
+<arg>mês: ${MESES[9]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.184089" elapsed="0.000282"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.184660" level="INFO">mês: novembro</msg>
+<arg>mês: ${MESES[10]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.184426" elapsed="0.000261"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.184976" level="INFO">mês: dezembro</msg>
+<arg>mês: ${MESES[11]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.184745" elapsed="0.000257"/>
+</kw>
+<status status="PASS" start="2025-05-09T01:29:22.179953" elapsed="0.005098"/>
+</kw>
+<kw name="Uma keyword de log mês e dias">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.185980" level="INFO">Mês: janeiro | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes0} | Quantidade de dias: ${MESESeDIAS.qtdias0}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.185542" elapsed="0.000475"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.186465" level="INFO">Mês: fevereiro | Quantidade de dias: 28</msg>
+<arg>Mês: ${MESESeDIAS.mes1} | Quantidade de dias: ${MESESeDIAS.qtdias1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.186081" elapsed="0.000417"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.186933" level="INFO">Mês: março | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes2} | Quantidade de dias: ${MESESeDIAS.qtdias2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.186562" elapsed="0.000400"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.187372" level="INFO">Mês: abril | Quantidade de dias: 30</msg>
+<arg>Mês: ${MESESeDIAS.mes3} | Quantidade de dias: ${MESESeDIAS.qtdias3}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.187021" elapsed="0.000378"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.187801" level="INFO">Mês: maio | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes4} | Quantidade de dias: ${MESESeDIAS.qtdias4}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.187458" elapsed="0.000373"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.188254" level="INFO">Mês: junho | Quantidade de dias: 30</msg>
+<arg>Mês: ${MESESeDIAS.mes5} | Quantidade de dias: ${MESESeDIAS.qtdias5}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.187891" elapsed="0.000399"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.188703" level="INFO">Mês: julho | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes6} | Quantidade de dias: ${MESESeDIAS.qtdias6}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.188349" elapsed="0.000384"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.189199" level="INFO">Mês: agosto | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes7} | Quantidade de dias: ${MESESeDIAS.qtdias7}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.188792" elapsed="0.000445"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.189765" level="INFO">Mês: setembro | Quantidade de dias: 30</msg>
+<arg>Mês: ${MESESeDIAS.mes8} | Quantidade de dias: ${MESESeDIAS.qtdias8}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.189301" elapsed="0.000504"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.190291" level="INFO">Mês: outubro | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes9} | Quantidade de dias: ${MESESeDIAS.qtdias9}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.189899" elapsed="0.000421"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.190742" level="INFO">Mês: novembro | Quantidade de dias: 30</msg>
+<arg>Mês: ${MESESeDIAS.mes10} | Quantidade de dias: ${MESESeDIAS.qtdias10}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.190387" elapsed="0.000383"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T01:29:22.191384" level="INFO">Mês: dezembro | Quantidade de dias: 31</msg>
+<arg>Mês: ${MESESeDIAS.mes11} | Quantidade de dias: ${MESESeDIAS.qtdias11}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T01:29:22.190834" elapsed="0.000580"/>
+</kw>
+<status status="PASS" start="2025-05-09T01:29:22.185352" elapsed="0.006105"/>
+</kw>
+<status status="PASS" start="2025-05-09T01:29:22.179194" elapsed="0.012515"/>
+</test>
+<doc>1- Crie uma variável do tipo LISTA na seção de variáveis globais
+que contenha todos os meses do ano;
+2- Crie um teste que imprima no Console (Log To Console) cada item
+dessa lista (não use FOR, imprima um a um).
+3- Crie a mesma variável mas do tipo DICIONÁRIO.
+4- Crie uma variável do tipo DICIONÁRIO na seção de variáveis globais
+que contenha nela os meses do ano e, para cada mês, número de dias.
+5- Crie um teste que imprima no Console (Log To Console) cada mês e
+a sua respectiva quantidade de dias.
+6- Rode os testes e confira se logou tudo certinho!</doc>
+<status status="PASS" start="2025-05-09T01:29:22.153916" elapsed="0.038206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Exe01-Lista-Dic" id="s1" pass="1" fail="0" skip="0">Exe01-Lista-Dic</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-09T01:29:22.148383" level="WARN">Error in file 'L:\Coder\Estudos-Full-Stack\QA\Robot Framework\UDM s4\VariaveisEscoposArgumentos\exe01-lista-dic.robot' on line 13: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+</errors>
+</robot>
