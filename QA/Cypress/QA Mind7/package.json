@@ -5,6 +5,9 @@
     "cy:run:chrome": "npx cypress run --browser chrome"
   },
   "devDependencies": {
-    "cypress": "^15.5.0"
+    "cypress": "^15.5.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-multi-reporters": "^2.0.5",
+    "mocha-junit-reporters": "^1.23.6"
   }
 }
