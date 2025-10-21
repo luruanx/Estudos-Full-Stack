@@ -1,5 +1,6 @@
 package com.aula01;
 
+import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -25,12 +26,12 @@ public class Test01 {
 
         get("https://restapi.wcaquino.me/ola").then().statusCode(200);
 
-        given()
+        RestAssured.given()
                 .when()
-                .get("https://restapi.wcaquino.me/ola")
+                    .get("https://restapi.wcaquino.me/ola")
                 .then()
-                .assertThat()
-                .statusCode(200);
+                    .assertThat()
+                    .statusCode(200);
     }
 
     @Test
@@ -52,5 +53,33 @@ public class Test01 {
         Assert.assertThat("Maria", Matchers.not("João")); //Verifica se os valores não são iguais
         Assert.assertThat("Maria", Matchers.anyOf(Matchers.is("Maria"), Matchers.is("João"))); //Verifica se o valor 1 é igual a qualquer um dos valores 2
 
+    }
+
+    @Test
+    @Order(2)
+    @DisplayName("validarBody")
+    public void devoValidarBody() {
+        given()
+                .when()
+                    .get("https://restapi.wcaquino.me/ola")
+                .then()
+                    .statusCode(200)
+                    .body(Matchers.is("Ola Mundo!"))
+                    .body(Matchers.containsString("Mundo"))
+                    .body(Matchers.not(Matchers.nullValue()));
+    }
+
+    @Test
+    @Order(3)
+    @DisplayName("JSON Users")
+    public void verificarPrimeiroNivel() {
+        given()
+                .when()
+                    .get("https://restapi.wcaquino.me/users/1")
+                .then()
+                    .statusCode(200)
+                    .body("id", Matchers.is(1))
+                    .body("name", Matchers.containsString("Silva"))
+                    .body("age", Matchers.greaterThan(18));
     }
 }

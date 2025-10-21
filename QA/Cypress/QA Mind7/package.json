@@ -1,0 +1,10 @@
+{
+  "name": "cursoqamind7",
+  "scripts": {
+    "cy:open:chrome": "npx cypress open --browser chrome",
+    "cy:run:chrome": "npx cypress run --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  }
+}
